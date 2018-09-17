@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import MobileMenu from '../components/MobileMenu'
 // import './index.css'
 import styles from '../styles/layout.module.css'
 
@@ -16,6 +17,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
+    <MobileMenu></MobileMenu>
     <Navbar siteTitle={data.site.siteMetadata.title} />
     <div className={styles.container}>
       {children()}

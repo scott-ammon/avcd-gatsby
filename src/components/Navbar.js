@@ -10,6 +10,7 @@ const Navbar = ({ siteTitle }) => (
     <div className={styles.headerRight}>
       <Link to="/about" className={styles.navLink}>About</Link>
       <Link to="/projects" className={styles.navLink}>Projects</Link>
+      <Link to="/testimonials" className={styles.navLink}>Testimonials</Link>
       <Link to="/contact" className={styles.navLink}>Contact</Link>
     </div>
   </div>
