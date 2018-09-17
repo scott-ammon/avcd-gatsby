@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from '../styles/index.module.css'
 
 const IndexPage = () => (
   <div>
@@ -6,30 +7,32 @@ const IndexPage = () => (
     <p>AV Concepts and Design, Inc. is a team of professional 
       audio/video engineers and systems integrators offering 
       customized technology solutions for the discriminating client.</p>
-      <div>
-        <h2>Scope</h2>
-        <ul>
-          <li>Custom Audio/Video Entertainment Systems in the Marine and Residential Environments</li>
-          <li>Dedicated Digital Surround Sound Theater</li>
-          <li>Satellite (domestic and foreign)</li>
-          <li>Media Storage Systems/On-Demand Audio/Video</li>
-          <li>Lighting Design and Control Systems</li>
-          <li>Data/Networking</li>
-          <li>Phone Systems</li>
-          <li>Security Systems</li>
-        </ul>
-      </div>
-      <div>
-        <h2>Services</h2>
-        <ul>
-          <li>Specifications & Proposals</li>
-          <li>Project Management</li>
-          <li>AutoCAD Engineering</li>
-          <li>Procurement</li>
-          <li>Installation</li>
-          <li>Programming & Commissioning</li>
-          <li>Ongoing Support</li>
-        </ul>
+      <div className={styles.flexContainer}>
+        <div>
+          <h2>Scope</h2>
+          <ul>
+            <li>Custom Audio/Video Entertainment Systems <br></br>in the Marine and Residential Environments</li>
+            <li>Dedicated Digital Surround Sound Theater</li>
+            <li>Satellite (domestic and foreign)</li>
+            <li>Media Storage Systems/On-Demand Audio/Video</li>
+            <li>Lighting Design and Control Systems</li>
+            <li>Data/Networking</li>
+            <li>Phone Systems</li>
+            <li>Security Systems</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Services</h2>
+          <ul>
+            <li>Specifications & Proposals</li>
+            <li>Project Management</li>
+            <li>AutoCAD Engineering</li>
+            <li>Procurement</li>
+            <li>Installation</li>
+            <li>Programming & Commissioning</li>
+            <li>Ongoing Support</li>
+          </ul>
+        </div>
       </div>
       <div>
         <h2>Trusted Support</h2>
