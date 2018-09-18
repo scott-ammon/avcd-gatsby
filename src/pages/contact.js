@@ -27,10 +27,9 @@ class ContactPage extends Component {
         </div>
         <form className={styles.contactFlex} 
               method="POST"
-              name="info-form" 
-              data-netlify="true"
-              data-netlify-honeypot="bot-field">
-          <input type="hidden" name="bot-field" />
+              action="https://formspree.io/scott.o.ammon@gmail.com"
+              name="info-form"
+        >
           <label>
             Name
             <input
