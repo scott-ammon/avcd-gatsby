@@ -27,7 +27,7 @@ class ContactPage extends Component {
         </div>
         <form className={styles.contactFlex} 
               method="post"
-              name="contact" 
+              name="contact-form" 
               data-netlify="true"
               data-netlify-honeypot="bot-field">
           <input type="hidden" name="bot-field" />
