@@ -88,7 +88,7 @@ class ContactPage extends Component {
               className={styles.contactInput}
             />
           </label>
-          <button type="submit">Submit</button>
+          <button>Submit</button>
         </form>
         
       </div>
