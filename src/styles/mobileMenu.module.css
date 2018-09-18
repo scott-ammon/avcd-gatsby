@@ -1,6 +1,10 @@
-.menuItem {
+/* .menuItem {
   text-decoration: none;
   background-image: none;
   color: black;
   text-shadow: none;
+} */
+
+#mobile-menu {
+  display: none;
 }

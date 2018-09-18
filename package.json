@@ -10,6 +10,7 @@
     "gatsby-plugin-typography": "^1.7.19",
     "react-burger-menu": "^2.5.2",
     "react-helmet": "^5.2.0",
+    "react-responsive": "^5.0.0",
     "typography": "^0.16.17",
     "typography-theme-fairy-gates": "^0.15.11",
     "typography-theme-ocean-beach": "^0.15.11"

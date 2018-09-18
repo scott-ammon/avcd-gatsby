@@ -21,7 +21,7 @@ class MobileMenu extends React.Component {
         top: '18px'
       },
       bmBurgerBars: {
-        background: '#373a47'
+        background: 'white'
       },
       bmCrossButton: {
         height: '24px',
