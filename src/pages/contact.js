@@ -25,7 +25,12 @@ class ContactPage extends Component {
           <p>Phone:	+1 (425) 881-5621</p>
           <p>Fax:	+1 (425) 883-3952</p>
         </div>
-        <form className={styles.contactFlex} method="post" action="/success" name="contact" data-netlify="true">
+        <form className={styles.contactFlex} 
+              method="post"
+              name="contact" 
+              data-netlify="true"
+              data-netlify-honeypot="bot-field">
+          <input type="hidden" name="bot-field" />
           <label>
             Name
             <input
