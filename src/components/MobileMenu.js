@@ -4,7 +4,13 @@ import Link from 'gatsby-link'
 import styles from '../styles/mobileMenu.module.css'
 
 class MobileMenu extends React.Component {
-  
+  constructor (props) {
+    super(props)
+    this.state = {
+      menuOpen: false
+    }
+  }
+
   render () {
     const styles = {
       bmBurgerButton: {
@@ -26,6 +32,7 @@ class MobileMenu extends React.Component {
       },
       bmMenu: {
         background: '#373a47',
+        height: '100vh',
         padding: '2.5em 1.5em 0',
         fontSize: '1.15em',
         backgroundImage: 'none'
@@ -45,13 +52,18 @@ class MobileMenu extends React.Component {
       },
       bmOverlay: {
         background: 'rgba(0, 0, 0, 0)'
+      },
+      bmMenuWrap: {
+        top: '0'
       }
     }
 
     return (
-      <Menu right styles={styles}>
+      <Menu isOpen={this.state.menuOpen} right styles={styles}>
         <Link className={styles.menuItem} to="/">Home</Link>
         <Link className={styles.menuItem} to="/about">About</Link>
+        <Link className={styles.menuItem} to="/projects">Projects</Link>
+        <Link className={styles.menuItem} to="/testimonials">Testimonials</Link>
         <Link className={styles.menuItem} to="/contact">Contact</Link>
       </Menu>
     );

@@ -9,6 +9,7 @@ import MobileMenu from '../components/MobileMenu'
 import styles from '../styles/layout.module.css'
 
 const Layout = ({ children, data }) => (
+
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
