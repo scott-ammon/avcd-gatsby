@@ -36,7 +36,6 @@ class ContactPage extends Component {
             <input
               name="name"
               type="text"
-              onChange={this.handleInputChange}
               className={styles.contactInput}
               required
             />
@@ -46,7 +45,6 @@ class ContactPage extends Component {
             <input
               name="email"
               type="text"
-              onChange={this.handleInputChange}
               className={styles.contactInput}
               required
             />
@@ -56,7 +54,6 @@ class ContactPage extends Component {
             <input
               name="project"
               type="text"
-              onChange={this.handleInputChange}
               className={styles.contactInput}
             />
           </label>
@@ -65,7 +62,6 @@ class ContactPage extends Component {
             <input
               name="build"
               type="text"
-              onChange={this.handleInputChange}
               className={styles.contactInput}
             />
           </label>
@@ -74,7 +70,6 @@ class ContactPage extends Component {
             <input
               name="timing"
               type="text"
-              onChange={this.handleInputChange}
               className={styles.contactInput}
             />
           </label>
@@ -84,7 +79,6 @@ class ContactPage extends Component {
               name="comments"
               type="text"
               rows="5"
-              onChange={this.handleInputChange}
               className={styles.contactInput}
             />
           </label>
