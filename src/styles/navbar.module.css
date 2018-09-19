@@ -4,6 +4,17 @@
   text-shadow: none;
   color: white;
   margin: 0 1rem;
+  padding-bottom: 16px;
+}
+
+.selectedPage {
+  text-decoration: none;
+  background-image: none;
+  border-bottom: 3px solid white;
+  text-shadow: none;
+  color: white;
+  margin: 0 1rem;
+  padding-bottom: 16px;
 }
 
 .header {

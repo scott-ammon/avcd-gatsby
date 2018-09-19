@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import yacht from '../img/happy-days.jpg'
+import styles from '../styles/projects.module.css'
 
 const ProjectsPage = () => (
   <div>
@@ -9,22 +11,93 @@ const ProjectsPage = () => (
       you to contact us with specific inquiries about the wide range of yachts, private residences, 
       and other locations in which we have worked for over 20 years.
     </p>
-    <p>M/Y Adler</p>
-    <p>M/Y Big Fish</p>
-    <p>M/Y Cakewalk 62m</p>
-    <p>M/Y Cakewalk 85m</p>
-    <p>Glendinning</p>
-    <p>M/Y Happy Days</p>
-    <p>M/Y Illusion</p>
-    <p>M/Y Kisses</p>
-    <p>LWR Testimony</p>
-    <p>M/Y Miss Lisa</p>
-    <p>M/Y Marama</p>
-    <p>M/Y Meduse</p>
-    <p>M/Y Mr. Terrible</p>
-    <p>M/Y Phoenix</p>
-    <p>M/Y Polar Bear</p>
-    <p>M/Y Slojo</p>
+    <div className={styles.projectsGrid}>
+      <div className={styles.projectCard}>
+        <span className={styles.projectName}>M/Y Adler</span>
+        <span className={styles.overlay}></span>
+        <img src={yacht}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <span className={styles.projectName}>M/Y Big Fish</span>
+        <span className={styles.overlay}></span>
+        <img src={yacht}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <span className={styles.projectName}>M/Y Adler</span>
+        <span className={styles.overlay}></span>
+        <img src={yacht}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <span className={styles.projectName}>M/Y Cakewalk 62m</span>
+        <span className={styles.overlay}></span>
+        <img src={yacht}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <span className={styles.projectName}>M/Y Cakewalk 85m</span>
+        <span className={styles.overlay}></span>
+        <img src={yacht}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <span className={styles.projectName}>Glendinning</span>
+        <span className={styles.overlay}></span>
+        <img src={yacht}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <span className={styles.projectName}>M/Y Happy Days</span>
+        <span className={styles.overlay}></span>
+        <img src={yacht}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <span className={styles.projectName}>M/Y Illusion</span>
+        <span className={styles.overlay}></span>
+        <img src={yacht}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <span className={styles.projectName}>M/Y Kisses</span>
+        <span className={styles.overlay}></span>
+        <img src={yacht}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <span className={styles.projectName}>LWR Testimony</span>
+        <span className={styles.overlay}></span>
+        <img src={yacht}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <span className={styles.projectName}>M/Y Miss Lisa</span>
+        <span className={styles.overlay}></span>
+        <img src={yacht}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <span className={styles.projectName}>M/Y Marama</span>
+        <span className={styles.overlay}></span>
+        <img src={yacht}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <span className={styles.projectName}>M/Y Meduse</span>
+        <span className={styles.overlay}></span>
+        <img src={yacht}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <span className={styles.projectName}>M/Y Mr. Terrible</span>
+        <span className={styles.overlay}></span>
+        <img src={yacht}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <span className={styles.projectName}>M/Y Phoenix</span>
+        <span className={styles.overlay}></span>
+        <img src={yacht}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <span className={styles.projectName}>M/Y Polar Bear</span>
+        <span className={styles.overlay}></span>
+        <img src={yacht}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <span className={styles.projectName}>M/Y Slojo</span>
+        <span className={styles.overlay}></span>
+        <img src={yacht}></img>
+      </div>
+    </div>
   </div>
 )
 
