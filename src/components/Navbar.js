@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styles from "../styles/navbar.module.css";
+import styles from '../styles/navbar.module.css'
+import logo from '../img/avcd-logo.png'
 
 const Navbar = ({ siteTitle }) => (
   <div className={styles.header}>
     <h3>
-      <Link to="/" className={styles.title}>AVCD</Link>
+      <Link to="/" className={styles.title}><img className={styles.logo} src={logo}></img></Link>
     </h3>
     <div className={styles.headerRight}>
       <Link to="/about" className={styles.navLink}>About</Link>

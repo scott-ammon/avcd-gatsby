@@ -1,7 +1,6 @@
 import { slide as Menu } from 'react-burger-menu'
 import React from 'react'
 import Link from 'gatsby-link'
-import styles from '../styles/mobileMenu.module.css'
 
 class MobileMenu extends React.Component {
   constructor (props) {
@@ -21,14 +20,17 @@ class MobileMenu extends React.Component {
         top: '18px'
       },
       bmBurgerBars: {
-        background: 'white'
+        background: 'white',
+        height: '10%'
       },
       bmCrossButton: {
-        height: '24px',
-        width: '24px'
+        height: '36px',
+        width: '36px',
       },
       bmCross: {
-        background: 'black'
+        width: '4px',
+        height: '20px',
+        background: 'white'
       },
       bmMenu: {
         background: '#373a47',
@@ -46,6 +48,7 @@ class MobileMenu extends React.Component {
       },
       bmItem: {
         display: 'block',
+        paddingBottom: '1rem',
         textShadow: 'none',
         backgroundImage: 'none',
         color: 'white'
