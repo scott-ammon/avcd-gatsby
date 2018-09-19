@@ -1,0 +1,14 @@
+.projectsGrid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 250x;
+  grid-auto-flow: dense;
+}
+
+.imageCard img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
