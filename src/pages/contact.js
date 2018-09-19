@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Link from 'gatsby-link'
 import styles from "../styles/contact.module.css"
 
 class ContactPage extends Component {
@@ -21,66 +20,53 @@ class ContactPage extends Component {
       <div>
         <h1>Contact Us</h1>
         <div>
-          <p>A/V Concepts & Design 15336 NE 96th Place, #C-3; Redmond, WA 98052 USA</p>
-          <p>Phone:	+1 (425) 881-5621</p>
-          <p>Fax:	+1 (425) 883-3952</p>
+          <p>Don't hesitate to reach out to us. We'll get back to you shortly!</p>
         </div>
         <form className={styles.contactFlex} 
               method="POST"
               action="https://formspree.io/scott.o.ammon@gmail.com"
               name="info-form"
         >
-          <label>
-            Name
-            <input
-              name="name"
-              type="text"
-              className={styles.contactInput}
-              required
-            />
-          </label>
-          <label>
-            Email
-            <input
-              name="email"
-              type="text"
-              className={styles.contactInput}
-              required
-            />
-          </label>
-          <label>
-            Project
-            <input
-              name="project"
-              type="text"
-              className={styles.contactInput}
-            />
-          </label>
-          <label>
-            New Build or Refit
-            <input
-              name="build"
-              type="text"
-              className={styles.contactInput}
-            />
-          </label>
-          <label>
-            Timing for Project
-            <input
-              name="timing"
-              type="text"
-              className={styles.contactInput}
-            />
-          </label>
-          <label>
-            Comments
-            <textarea
-              name="comments"
-              type="text"
-              rows="5"
-              className={styles.contactInput}
-            />
-          </label>
+          <label>*Full Name</label>
+          <input
+            name="name"
+            type="text"
+            className={styles.contactInput}
+            required
+          />
+          <label>*Email</label>
+          <input
+            name="email"
+            type="text"
+            className={styles.contactInput}
+            required
+          />
+          <label>Project</label>
+          <input
+            name="project"
+            type="text"
+            className={styles.contactInput}
+          />
+          <label>New Build or Refit</label>
+          <input
+            name="build"
+            type="text"
+            className={styles.contactInput}
+          />
+          <label>Timing for Project</label>
+          <input
+            name="timing"
+            type="text"
+            className={styles.contactInput}
+          />
+          <label>Comments</label>
+          <textarea
+            name="comments"
+            type="text"
+            rows="5"
+            className={styles.contactInput}
+          />
+          <p>*Indicates required field</p>
           <button>Submit</button>
         </form>
         

@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../styles/projectShow.module.css'
+import img0 from '../img/happy-days/0.jpg'
 import img1 from '../img/happy-days/1.jpg'
 import img2 from '../img/happy-days/2.jpg'
 import img3 from '../img/happy-days/3.jpg'
@@ -15,6 +16,10 @@ import img11 from '../img/happy-days/11.jpg'
 const ProjectShow = () => (
   <div>
     <h1>Happy Days</h1>
+    <div className={styles.coverImg}>
+      <img src={img0}></img>
+    </div>
+    
     <p>
       Whole boat audio video entertainment system with integration to the AVCD-supplied lighting control system.
     </p>

@@ -12,3 +12,12 @@
   height: 100%;
   object-fit: cover;
 }
+
+.coverImg {
+  width: 100%;
+  text-align: center;
+}
+
+.coverImg img {
+  width: 100%;
+}
