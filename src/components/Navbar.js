@@ -16,26 +16,32 @@ class Navbar extends Component {
   }
 
   selectMenu = e => {
-    for (let link in this.state) {
-      if(link == e.target.name) {
-        this.setState({
-          [link]: [styles.navLink, styles.active].join(' ')
-        })
-      } else {
+    if(e.target.name == 'home') {
+      for(let link in this.state) {
         this.setState({
           [link]: styles.navLink
         })
       }
+    } else {
+      for (let link in this.state) {
+        if(link == e.target.name) {
+          this.setState({
+            [link]: [styles.navLink, styles.active].join(' ')
+          })
+        } else {
+          this.setState({
+            [link]: styles.navLink
+          })
+        }
+      }
     }
-    console.log(this.state)
   }
 
   render() {
-
     return (
       <div className={styles.header}>
         <h3>
-          <Link to="/" className={styles.title}><img className={styles.logo} src={logo}></img></Link>
+          <Link name="home" onClick={this.selectMenu} to="/" className={styles.title}><img className={styles.logo} src={logo}></img></Link>
         </h3>
         <div className={styles.headerRight}>
           <Link name="about" onClick={this.selectMenu} to="/about" className={this.state.about}>About</Link>
