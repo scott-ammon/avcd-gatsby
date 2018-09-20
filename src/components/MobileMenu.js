@@ -48,7 +48,8 @@ class MobileMenu extends React.Component {
       },
       bmItem: {
         display: 'block',
-        paddingBottom: '1rem',
+        paddingBottom: '2rem',
+        fontSize: '1.5rem',
         textShadow: 'none',
         backgroundImage: 'none',
         color: 'white'
@@ -57,7 +58,8 @@ class MobileMenu extends React.Component {
         background: 'rgba(0, 0, 0, 0)'
       },
       bmMenuWrap: {
-        top: '0'
+        top: '0',
+        width: '75vw'
       }
     }
 

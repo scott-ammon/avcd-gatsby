@@ -9,7 +9,7 @@
 }
 
 .description {
-  margin-top: 0;
+  margin: 0 0 2rem 0;
 }
 
 @media (max-width: 550px) {

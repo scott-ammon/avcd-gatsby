@@ -61,7 +61,7 @@ const IndexPage = () => (
         <hr></hr>
         <div className={styles.management}>
           <h2>Management Approach</h2>
-          <h4>Privacy</h4>
+          <h4 className={styles.privacy}>Privacy</h4>
           <p>From the beginning of a project, we respect the need for absolute privacy.</p>
           <h4>Communications</h4>
           <p>
