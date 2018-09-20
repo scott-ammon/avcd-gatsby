@@ -4,7 +4,7 @@ import styles from '../styles/testimonials.module.css'
 
 const Testimonials = () => (
   <div className={styles.container}>
-    <h1 className={styles.testimonials}>Testimonials</h1>
+    <h1 className={styles.title}>Testimonials</h1>
     <p className={styles.tParagraph}>
       "Over the years, our company has worked with a number of A/V firms, and we believe Audio Video Concepts 
       and Design to be one of the top firms in the world. Their attention to detail, high quality design, excellent 

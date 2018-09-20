@@ -41,6 +41,10 @@
   padding: 3rem 0;
 }
 
+hr {
+  margin: 0;
+}
+
 @media (max-width: 768px) {
   .flexContainer,
   .headerFlex {

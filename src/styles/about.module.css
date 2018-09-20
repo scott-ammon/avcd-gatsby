@@ -1,6 +1,11 @@
 .container {
-  margin: 6rem auto 0 auto;
+  margin: 0 auto;
+  padding-top: 3rem;
   width: 70vw;
+}
+
+.title {
+  margin: 0 0 2rem 0;
 }
 
 .description {

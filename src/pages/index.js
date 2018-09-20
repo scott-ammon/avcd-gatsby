@@ -43,6 +43,7 @@ const IndexPage = () => (
             </ul>
           </div>
         </div>
+        <hr></hr>
         <div className={styles.support}>
           <h2>Trusted Support</h2>
           <p>Customer Service is what makes A/V Concepts and Design stand out from our competitors.</p>
@@ -57,6 +58,7 @@ const IndexPage = () => (
             simplify the construction and outfitting process…” – Mark Masciarotte, Owner’s Representative
           </p>
         </div>
+        <hr></hr>
         <div className={styles.management}>
           <h2>Management Approach</h2>
           <h4>Privacy</h4>

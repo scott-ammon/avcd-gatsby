@@ -1,9 +1,11 @@
 .container {
-  margin: 6rem auto 0 auto;
+  margin: 0 auto;
+  padding-top: 3rem;
   width: 70vw;
 }
 
-.contactUs {
+.title {
+  margin: 0;
   padding-bottom: 0;
 }
 

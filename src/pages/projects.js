@@ -20,7 +20,7 @@ import slojo from '../img/slojo/1.jpg'
 
 const ProjectsPage = () => (
   <div className={styles.container}>
-    <h1>Select Projects</h1>
+    <h1 className={styles.title}>Select Projects</h1>
     <p>
       Many of our projects cannot be shown, out of respect for our clients’ privacy. We welcome 
       you to contact us with specific inquiries about the wide range of yachts, private residences, 
