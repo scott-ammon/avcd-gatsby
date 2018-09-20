@@ -1,10 +1,51 @@
+.container {
+  margin: 0 auto;
+  width: 70vw;
+}
+
+.background {
+  background-image: url('../img/waves.jpg');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.headerFlex {
+  display: flex;
+  align-items: flex-end;
+  padding: 6rem 0;
+}
+
+.headerFlex h1,
+.description {
+  margin: 0 1rem;
+  color: white;
+}
+
+.headerFlex h1 {
+  font-size: 64px;
+}
+
+.description {
+  line-height: 2rem;
+}
+
 .flexContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 3rem 0;
 }
 
 @media (max-width: 768px) {
-  .flexContainer {
+  .flexContainer,
+  .headerFlex {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    margin: 0 auto;
+    width: 90vw;
   }
 }

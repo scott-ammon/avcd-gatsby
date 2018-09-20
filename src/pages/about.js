@@ -1,7 +1,8 @@
 import React from 'react'
+import styles from '../styles/about.module.css'
 
 const AboutPage = () => (
-  <div>
+  <div className={styles.container}>
     <h1>About AVCD</h1>
     <h5>
       AV Concepts and Design, Inc. is a team of professional audio/video engineers and systems 

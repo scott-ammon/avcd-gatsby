@@ -1,3 +1,8 @@
+.container {
+  margin: 6rem auto 0 auto;
+  width: 70vw;
+}
+
 .contactInput {
   display: inline-block;
   margin: 0 0 1rem 0;
@@ -53,5 +58,9 @@ button:hover {
 @media (max-width: 550px) {
   input {
     width: 100%;
+  }
+  .container {
+    margin: 0 auto;
+    width: 90vw;
   }
 }

@@ -1,9 +1,10 @@
 
 import React from 'react'
+import styles from '../styles/testimonials.module.css'
 
 const Testimonials = () => (
-  <div>
-    <h2>Testimonials</h2>
+  <div className={styles.container}>
+    <h1>Testimonials</h1>
     <p>
       "Over the years, our company has worked with a number of A/V firms, and we believe Audio Video Concepts 
       and Design to be one of the top firms in the world. Their attention to detail, high quality design, excellent 

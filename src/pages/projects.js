@@ -4,7 +4,7 @@ import yacht from '../img/happy-days.jpg'
 import styles from '../styles/projects.module.css'
 
 const ProjectsPage = () => (
-  <div>
+  <div className={styles.container}>
     <h1>Select Projects</h1>
     <p>
       Many of our projects cannot be shown, out of respect for our clients’ privacy. We welcome 
@@ -18,7 +18,6 @@ const ProjectsPage = () => (
           <div className={styles.projectName}>M/Y Adler</div>
         </Link>
       </div>
-
       <div className={styles.projectCard}>
         <img src={yacht}></img>
         <Link to='/' className={styles.overlay}>

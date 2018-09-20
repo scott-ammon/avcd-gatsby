@@ -17,7 +17,7 @@ class ContactPage extends Component {
 
   render() {
     return  (
-      <div>
+      <div className={styles.container}>
         <h1>Contact Us</h1>
         <div>
           <p>Don't hesitate to reach out to us. We'll get back to you shortly!</p>
