@@ -16,9 +16,18 @@ class Navbar extends Component {
   }
 
   selectMenu = e => {
-    this.setState({
-      [e.target.name]: styles.selectedPage
-    })
+    for (let link in this.state) {
+      if(link == e.target.name) {
+        this.setState({
+          [link]: [styles.navLink, styles.active].join(' ')
+        })
+      } else {
+        this.setState({
+          [link]: styles.navLink
+        })
+      }
+    }
+    console.log(this.state)
   }
 
   render() {

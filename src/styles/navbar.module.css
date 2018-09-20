@@ -7,7 +7,7 @@
   padding-bottom: 16px;
 }
 
-.selectedPage {
+.active {
   text-decoration: none;
   background-image: none;
   border-bottom: 3px solid white;
