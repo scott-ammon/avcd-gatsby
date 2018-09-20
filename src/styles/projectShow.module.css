@@ -1,3 +1,8 @@
+.container {
+  margin: 6rem auto 0 auto;
+  width: 70vw;
+}
+
 .projectsGrid {
   display: grid;
   grid-gap: 10px;
@@ -20,4 +25,12 @@
 
 .coverImg img {
   width: 100%;
+}
+
+
+@media (max-width: 550px) {
+  .container {
+    margin: 0 auto;
+    width: 90vw;
+  }
 }

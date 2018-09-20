@@ -14,7 +14,7 @@ import img10 from '../img/happy-days/10.jpg'
 import img11 from '../img/happy-days/11.jpg'
 
 const ProjectShow = () => (
-  <div>
+  <div className={styles.container}>
     <h1>Happy Days</h1>
     <div className={styles.coverImg}>
       <img src={img0}></img>
