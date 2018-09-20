@@ -6,7 +6,7 @@ const IndexPage = () => (
     <div className={styles.background}>
       <div className={styles.container}>
         <div className={styles.headerFlex}>
-          <h1>AV Concepts & Design</h1>
+          <h1 className={styles.headerTitle}>AV Concepts & Design</h1>
           <h2 className={styles.description}>
             We are a team of professional 
             audio/video engineers and systems integrators offering 
@@ -43,7 +43,7 @@ const IndexPage = () => (
             </ul>
           </div>
         </div>
-        <div>
+        <div className={styles.support}>
           <h2>Trusted Support</h2>
           <p>Customer Service is what makes A/V Concepts and Design stand out from our competitors.</p>
           <p> 
@@ -57,7 +57,7 @@ const IndexPage = () => (
             simplify the construction and outfitting process…” – Mark Masciarotte, Owner’s Representative
           </p>
         </div>
-        <div>
+        <div className={styles.management}>
           <h2>Management Approach</h2>
           <h4>Privacy</h4>
           <p>From the beginning of a project, we respect the need for absolute privacy.</p>

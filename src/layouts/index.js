@@ -22,7 +22,7 @@ const Layout = ({ children, data }) => (
     <MediaQuery query="(max-width: 550px)">
       <MobileMenu></MobileMenu>
     </MediaQuery>
-    <Navbar siteTitle={data.site.siteMetadata.title} />
+    <Navbar siteTitle={data.site.siteMetadata.title}/>
     <div className={styles.container}>
       {children()}
     </div>

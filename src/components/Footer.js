@@ -10,6 +10,9 @@ const Footer = () => (
       <p>Fax:	+1 (425) 883-3952</p>
       <p>info@avcd.com</p>
     </div>
+    <div className = {styles.copyright}>
+      <p>&copy; Scott Ammon | 2018 | Built with React + Gatsby </p>
+    </div>
   </div>
 )
 

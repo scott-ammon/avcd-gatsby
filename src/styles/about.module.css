@@ -3,6 +3,10 @@
   width: 70vw;
 }
 
+.description {
+  margin-top: 0;
+}
+
 @media (max-width: 550px) {
   .container {
     margin: 0 auto;

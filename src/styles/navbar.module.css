@@ -4,17 +4,15 @@
   text-shadow: none;
   color: white;
   margin: 0 1rem;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
+}
+
+.navLink:hover {
+  border-bottom: 3px solid white;
 }
 
 .active {
-  text-decoration: none;
-  background-image: none;
   border-bottom: 3px solid white;
-  text-shadow: none;
-  color: white;
-  margin: 0 1rem;
-  padding-bottom: 18px;
 }
 
 .header {
@@ -22,7 +20,7 @@
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  background-color: #1C98CC;
+  background-color: #0D5169;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -30,9 +28,8 @@
   z-index: 99;
 }
 
-h3 {
-  margin: 0;
-  padding: 0;
+a {
+  background-image: none;
 }
 
 .logo {

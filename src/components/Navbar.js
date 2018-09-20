@@ -40,9 +40,7 @@ class Navbar extends Component {
   render() {
     return (
       <div className={styles.header}>
-        <h3>
-          <Link name="home" onClick={this.selectMenu} to="/" className={styles.title}><img className={styles.logo} src={logo}></img></Link>
-        </h3>
+        <Link name="home" onClick={this.selectMenu} to="/"><img className={styles.logo} src={logo}></img></Link> 
         <div className={styles.headerRight}>
           <Link name="about" onClick={this.selectMenu} to="/about" className={this.state.about}>About</Link>
           <Link name="projects" to="/projects" onClick={this.selectMenu} className={this.state.projects}>Projects</Link>
