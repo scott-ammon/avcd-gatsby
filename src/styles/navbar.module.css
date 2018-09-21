@@ -1,18 +1,19 @@
 .navLink {
+  font-family: 'Coda';
   text-decoration: none;
   background-image: none;
   text-shadow: none;
-  color: white;
+  color: black;
   margin: 0 1rem;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
 }
 
 .navLink:hover {
-  border-bottom: 3px solid white;
+  border-bottom: 2px solid #004954;
 }
 
 .active {
-  border-bottom: 3px solid white;
+  border-bottom: 2px solid #004954;
 }
 
 .header {
@@ -20,7 +21,8 @@
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  background-color: #004954;
+  background-color: white;
+  /* background-color: #004954; */
   overflow: hidden;
   position: fixed;
   top: 0;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import styles from '../styles/navbar.module.css'
-import logo from '../img/avcd-logo1.png'
+import logo from '../img/avcd-logo2.png'
 
 class Navbar extends Component {
   constructor(props) {

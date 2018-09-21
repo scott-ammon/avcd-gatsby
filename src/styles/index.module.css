@@ -12,6 +12,7 @@
 
 .headerFlex {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 6rem 0;
 }
@@ -24,9 +25,12 @@
 
 .headerTitle {
   font-size: 64px;
+  max-width: 300px;
 }
 
 .description {
+  font-family: 'Open Sans', sans-serif;
+  max-width: 500px;
   line-height: 2rem;
 }
 

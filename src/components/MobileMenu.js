@@ -20,7 +20,7 @@ class MobileMenu extends React.Component {
         top: '18px'
       },
       bmBurgerBars: {
-        background: 'white',
+        background: 'black',
         height: '10%'
       },
       bmCrossButton: {
@@ -48,6 +48,8 @@ class MobileMenu extends React.Component {
       },
       bmItem: {
         display: 'block',
+        textDecoration: 'none',
+        fontFamily: 'Open Sans',
         paddingBottom: '2rem',
         fontSize: '1.5rem',
         textShadow: 'none',
