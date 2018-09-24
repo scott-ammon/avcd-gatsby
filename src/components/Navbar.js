@@ -7,48 +7,43 @@ class Navbar extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      about: styles.navLink,
-      projects: styles.navLink,
-      testimonials: styles.navLink,
-      contact: styles.navLink
+      nav: true
     }
-    this.selectMenu = this.selectMenu.bind(this)
+    this.handleScroll = this.handleScroll.bind(this)
   }
 
-  selectMenu = e => {
-    if(e.target.name == 'home') {
-      for(let link in this.state) {
-        this.setState({
-          [link]: styles.navLink
-        })
-      }
-    } else {
-      for (let link in this.state) {
-        if(link == e.target.name) {
-          this.setState({
-            [link]: [styles.navLink, styles.active].join(' ')
-          })
-        } else {
-          this.setState({
-            [link]: styles.navLink
-          })
-        }
-      }
+  handleScroll = (e) => {
+    if(window.pageYOffset > 0) {
+      this.setState({
+        nav: false
+      }) 
+    } else if (window.pageYOffset === 0) {
+      this.setState({
+        nav: true
+      })
     }
+  }
+
+  componentDidMount() {
+    // window.addEventListener('scroll', this.handleScroll);
   }
 
   render() {
-    return (
-      <div className={styles.header}>
-        <Link name="home" onClick={this.selectMenu} to="/"><img className={styles.logo} src={logo}></img></Link> 
-        <div className={styles.headerRight}>
-          <Link name="about" onClick={this.selectMenu} to="/about" className={this.state.about}>About</Link>
-          <Link name="projects" to="/projects" onClick={this.selectMenu} className={this.state.projects}>Projects</Link>
-          <Link name="testimonials" to="/testimonials" onClick={this.selectMenu} className={this.state.testimonials}>Testimonials</Link>
-          <Link name="contact" to="/contact" onClick={this.selectMenu} className={this.state.contact}>Contact</Link>
+    if(this.state.nav) {
+      return (
+        <div className={styles.header}>
+          <Link to="/"><img className={styles.logo} src={logo}></img></Link> 
+          <div className={styles.headerRight}>
+            <Link to="/about" className={styles.navLink} activeClassName={styles.active}>ABOUT</Link>
+            <Link to="/projects" className={styles.navLink} activeClassName={styles.active}>PROJECTS</Link>
+            <Link to="/testimonials" className={styles.navLink} activeClassName={styles.active}>TESTIMONIALS</Link>
+            <Link to="/contact" className={styles.navLink} activeClassName={styles.active}>CONTACT</Link>
+          </div>
         </div>
-      </div>
       )
+    } else {
+      return null
+    }
   }
 }
 
