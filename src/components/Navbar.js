@@ -2,12 +2,13 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import styles from '../styles/navbar.module.css'
 import logo from '../img/avcd-logo2.png'
+import classNames from 'classnames'
 
 class Navbar extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      nav: true
+      nav: styles.headerOne
     }
     this.handleScroll = this.handleScroll.bind(this)
   }
@@ -15,35 +16,31 @@ class Navbar extends Component {
   handleScroll = (e) => {
     if(window.pageYOffset > 0) {
       this.setState({
-        nav: false
+        nav: styles.headerTwo
       }) 
     } else if (window.pageYOffset === 0) {
       this.setState({
-        nav: true
+        nav: styles.headerOne
       })
     }
   }
 
   componentDidMount() {
-    // window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
   }
 
   render() {
-    if(this.state.nav) {
-      return (
-        <div className={styles.header}>
-          <Link to="/"><img className={styles.logo} src={logo}></img></Link> 
-          <div className={styles.headerRight}>
-            <Link to="/about" className={styles.navLink} activeClassName={styles.active}>ABOUT</Link>
-            <Link to="/projects" className={styles.navLink} activeClassName={styles.active}>PROJECTS</Link>
-            <Link to="/testimonials" className={styles.navLink} activeClassName={styles.active}>TESTIMONIALS</Link>
-            <Link to="/contact" className={styles.navLink} activeClassName={styles.active}>CONTACT</Link>
-          </div>
+    return (
+      <div className={classNames(this.state.nav, styles.nav)}>
+        <Link to="/"><img className={styles.logo} src={logo}></img></Link> 
+        <div className={styles.headerRight}>
+          <Link to="/about" className={styles.navLink} activeClassName={styles.active}>ABOUT</Link>
+          <Link to="/projects" className={styles.navLink} activeClassName={styles.active}>PROJECTS</Link>
+          <Link to="/testimonials" className={styles.navLink} activeClassName={styles.active}>TESTIMONIALS</Link>
+          <Link to="/contact" className={styles.navLink} activeClassName={styles.active}>CONTACT</Link>
         </div>
-      )
-    } else {
-      return null
-    }
+      </div>
+    )
   }
 }
 
