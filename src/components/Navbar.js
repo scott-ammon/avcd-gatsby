@@ -4,11 +4,13 @@ import styles from '../styles/navbar.module.css'
 import logoWhite from '../img/avcd-logo1.png'
 import logoBlack from '../img/avcd-logo2.png'
 import classNames from 'classnames'
+var bananas = null;
 
 class Navbar extends Component {
   constructor(props) {
     super(props)
-    let pageName = window.location.href.split('/');
+    var bananas = null;
+    let pageName = ''; //bananas.location.href.split('/');
     let linkStyle;
     let iconStyle;
     let navStyle;
@@ -33,16 +35,16 @@ class Navbar extends Component {
 
   handleScroll = (e) => {
 
-    let pageName = window.location.href.split('/');
+    let pageName = bananas.location.href.split('/');
 
     if(pageName[pageName.length - 1] === '') {
-      if(window.pageYOffset > 0) {
+      if(bananas.pageYOffset > 0) {
         this.setState({
           nav: styles.headerTwo,
           icon: logoBlack,
           link: styles.navBlack
         }) 
-      } else if (window.pageYOffset === 0) {
+      } else if (bananas.pageYOffset === 0) {
         this.setState({
           nav: styles.headerOne,
           icon: logoWhite,
@@ -62,6 +64,7 @@ class Navbar extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    bananas = window;
   }
 
   render() {
