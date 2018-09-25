@@ -36,6 +36,25 @@
   line-height: 2.5rem;
 }
 
+@keyframes bounce {
+  from { transform: translate(0, -50px);     }
+  to   { transform: translate(0, -60px); }
+}
+
+.clickMe {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  transform: translate(0, -50px);
+  animation: bounce 0.7s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.downArrow {
+  color: white;
+}
+
 .flexContainer {
   display: flex;
   justify-content: space-between;
@@ -124,6 +143,7 @@ hr {
     font-size: 48px;
   }
   .description {
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 2rem;
   }
 }
