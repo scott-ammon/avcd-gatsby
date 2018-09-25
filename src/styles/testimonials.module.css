@@ -9,8 +9,14 @@
   margin: 0 0 2rem 0;
 }
 
-.tParagraph {
-  margin-bottom: 3rem;
+.quoteBox {
+  margin: 1rem 0 3rem 0;
+  padding: .5rem 1rem;
+  box-shadow: 0 0.125rem 1.25rem rgba(0,0,0,.2);
+}
+
+.quoteBox p {
+  margin: 0;
 }
 
 @media (max-width: 550px) {

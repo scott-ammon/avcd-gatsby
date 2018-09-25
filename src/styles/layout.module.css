@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Coda');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
 html {
@@ -21,12 +21,21 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Coda', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 
-p, li, a {
+h2 {
+  color: #07277A;
+}
+
+p, li, a, label {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+}
+
+svg {
+  color: #6ED996;
 }
 
 @media (max-width: 1000px) {

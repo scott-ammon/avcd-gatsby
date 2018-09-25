@@ -5,9 +5,9 @@ import Link from 'gatsby-link'
 class MobileMenu extends React.Component {
   constructor (props) {
     super(props)
-    this.state = {
-      menuOpen: false
-    }
+      this.state = {
+        menuOpen: false
+      }
   }
 
   render () {
@@ -33,11 +33,11 @@ class MobileMenu extends React.Component {
         background: 'white'
       },
       bmMenu: {
-        background: '#373a47',
+        // background: '#373a47',
         height: '100vh',
         padding: '2.5em 1.5em 0',
         fontSize: '1.15em',
-        backgroundImage: 'none'
+        backgroundImage: 'linear-gradient(-20deg,#003661,#004985)'
       },
       bmMorphShape: {
         fill: '#373a47'
@@ -50,7 +50,7 @@ class MobileMenu extends React.Component {
         display: 'block',
         textDecoration: 'none',
         fontFamily: 'Open Sans',
-        paddingBottom: '2rem',
+        paddingBottom: '1.5rem',
         fontSize: '1.5rem',
         textShadow: 'none',
         backgroundImage: 'none',
