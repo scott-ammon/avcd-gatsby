@@ -12,8 +12,10 @@
 
 .headerFlex {
   display: flex;
+  height: 90vh;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
   padding: 6rem 0;
 }
 
@@ -109,6 +111,12 @@ hr {
   .headerFlex {
     flex-direction: column;
     padding: 6rem 0 3rem 0;
+  }
+  .headerFlex {
+    justify-content: flex-start;
+  }
+  .flexContainer {
+    padding-top: 2rem;
   }
   .flexContainer div {
     width: 70vw;

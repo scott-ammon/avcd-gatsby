@@ -27,7 +27,7 @@ class IndexPage extends Component {
               <h2 className={styles.description}>
                 We are a team of professional 
                 audio/video engineers and systems integrators offering 
-                customized technology solutions for the discriminating client.
+                customized technology solutions for the discerning client.
               </h2>
             </div>
           </div>
