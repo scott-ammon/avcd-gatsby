@@ -1,5 +1,11 @@
 import React from 'react'
 import styles from '../styles/index.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLock } from '@fortawesome/free-solid-svg-icons'
+import { faHandshake } from '@fortawesome/free-solid-svg-icons'
+import { faFile } from '@fortawesome/free-solid-svg-icons'
+import { faUsers } from '@fortawesome/free-solid-svg-icons'
+
 
 const IndexPage = () => (
   <div>
@@ -18,7 +24,7 @@ const IndexPage = () => (
       <div className={styles.container}>
         <div className={styles.flexContainer}>
           <div>
-            <h2>Scope</h2>
+            <h2>Systems We Build</h2>
             <ul>
               <li>Custom Audio/Video Entertainment Systems <br></br>in the Marine and Residential Environments</li>
               <li>Dedicated Digital Surround Sound Theater</li>
@@ -31,7 +37,7 @@ const IndexPage = () => (
             </ul>
           </div>
           <div>
-            <h2>Services</h2>
+            <h2>Services We Offer</h2>
             <ul>
               <li>Specifications & Proposals</li>
               <li>Project Management</li>
@@ -61,29 +67,42 @@ const IndexPage = () => (
         <hr></hr>
         <div className={styles.management}>
           <h2>Management Approach</h2>
-          <h4 className={styles.privacy}>Privacy</h4>
-          <p>From the beginning of a project, we respect the need for absolute privacy.</p>
-          <h4>Communications</h4>
-          <p>
-            We understand the importance of timely, thorough, and well-documented communications 
-            for the client, the interior design team, and particularly the shipyard. Throughout every 
-            step of the project, we provide thorough and timely documentation including AutoCAD drawings and meeting notes.
-          </p>
-          <h4>Documentation</h4>
-          <p>
-            We pride ourselves on providing outstanding technical documentation, including proactive details such as 
-            color-coding to ensure comprehension across language barriers.
-          </p>
-          <h4>Attention</h4>
-          <p>
-            Our availability and flexibility are critical when working on projects of this caliber. We have first-hand 
-            experience in the idiosyncrasies of building a boat, and a proven track record in providing ongoing support.
-          </p>
-          <h4>Personal Attention</h4>
-          <p>
-            Steve Segall is not only the president of our company, he is a hands-on project manager and engineer who 
-            will be directly involved in your project from beginning to end.
-          </p>
+          <div className={styles.mgmtFlex}>
+            <div className={styles.mgmt}>
+              <FontAwesomeIcon icon={faLock} size='4x'/>
+              <h4>Privacy</h4>
+              <p>
+                From the beginning of a project, we respect the need for absolute privacy.
+              </p>
+            </div>
+            <div className={styles.mgmt}>
+              <FontAwesomeIcon icon={faHandshake} size='4x'/>
+              <h4>Communication</h4>
+              <p>
+                We understand the importance of timely, thorough, and well-documented communications 
+                for the client, the interior design team, and particularly the shipyard. Throughout every 
+                step of the project, we provide thorough and timely documentation including AutoCAD drawings and meeting notes.
+              </p>
+            </div>
+          </div>
+          <div className={styles.mgmtFlex}>
+            <div className={styles.mgmt}>
+              <FontAwesomeIcon icon={faFile} size='4x'/>
+              <h4>Documentation</h4>
+              <p>
+                We pride ourselves on providing outstanding technical documentation, including proactive details such as 
+                color-coding to ensure comprehension across language barriers.
+              </p>
+            </div>
+            <div className={styles.mgmt}>
+              <FontAwesomeIcon icon={faUsers} size='4x'/>
+              <h4>Attention</h4>
+              <p>
+                Our availability and flexibility are critical when working on projects of this caliber. We have first-hand 
+                experience in the idiosyncrasies of building a boat, and a proven track record in providing ongoing support.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
   </div>

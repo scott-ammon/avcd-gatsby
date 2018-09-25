@@ -65,8 +65,6 @@ class Navbar extends Component {
   }
 
   render() {
-    console.log(window.location.href)
-
     return (
       <div className={classNames(this.state.nav, styles.nav)}>
         <Link to="/"><img className={styles.logo} src={this.state.icon}></img></Link> 

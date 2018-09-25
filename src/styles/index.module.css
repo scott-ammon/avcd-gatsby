@@ -42,17 +42,34 @@
   padding: 3rem 0;
 }
 
+.flexContainer div {
+  padding: 2rem;
+  width: 450px;
+  box-shadow: 0 0.125rem 1.25rem rgba(0,0,0,.2);
+}
+
 .support,
 .management {
   padding: 3rem 0;
 }
 
-.privacy {
+hr {
   margin: 0;
 }
 
-hr {
-  margin: 0;
+.mgmtFlex {
+  display: flex;
+  flex: 50% 50%;
+}
+
+.mgmt {
+  width: 50%;
+  text-align: center;
+  padding: 3rem;
+}
+
+.mgmt h4 {
+  margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -61,15 +78,29 @@ hr {
     flex-direction: column;
     padding: 3rem 0;
   }
+  .flexContainer div {
+    width: 70vw;
+  }
   .support,
   .management {
-  padding: 1rem 0;
-}
+    padding: 1rem 0;
+  }
+  .mgmtFlex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mgmt {
+    width: 100%;
+    padding: .5rem;
+  }
 }
 
 @media (max-width: 550px) {
   .container {
     margin: 0 auto;
+    width: 90vw;
+  }
+  .flexContainer div {
     width: 90vw;
   }
   .background {
