@@ -76,7 +76,7 @@ hr {
   .flexContainer,
   .headerFlex {
     flex-direction: column;
-    padding: 3rem 0;
+    padding: 6rem 0 3rem 0;
   }
   .flexContainer div {
     width: 70vw;
