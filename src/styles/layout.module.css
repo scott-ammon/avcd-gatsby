@@ -15,7 +15,7 @@ html {
 body {
   position: relative;
   margin: 0;
-  padding-top: 3rem;
+  padding-top: 0;
   padding-bottom: 15rem;
   min-height: 100%;
 }
