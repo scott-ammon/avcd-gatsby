@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h2 {
-  color: #0A168C;
+  color: #082C7F;
 }
 
 p, li, a, label {
@@ -35,7 +35,7 @@ p, li, a, label {
 }
 
 svg {
-  color: #14B3ED;
+  color: #082C7F;
 }
 
 @media (max-width: 1000px) {

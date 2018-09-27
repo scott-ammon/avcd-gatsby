@@ -19,6 +19,10 @@
   padding: 6rem 0;
 }
 
+.logo {
+  max-width: 30%;
+}
+
 .headerTitle,
 .description {
   margin: 0 1rem;
@@ -36,6 +40,11 @@
   max-width: 500px;
   font-size: 32px;
   line-height: 2.5rem;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
 @keyframes bounce {
@@ -93,6 +102,10 @@ hr {
   margin-top: 1rem;
 }
 
+.quote {
+  font-style: italic;
+}
+
 @media (max-width: 1400px) {
   .flexContainer div {
     margin: 1rem;
@@ -110,7 +123,7 @@ hr {
   .flexContainer,
   .headerFlex {
     flex-direction: column;
-    padding: 6rem 0 3rem 0;
+    padding: 3rem 0 3rem 0;
   }
   .headerFlex {
     justify-content: flex-start;
@@ -120,6 +133,9 @@ hr {
   }
   .flexContainer div {
     width: 70vw;
+  }
+  .logo {
+    max-width: 60%;
   }
   .support,
   .management {
@@ -153,5 +169,8 @@ hr {
   .description {
     font-size: 20px;
     line-height: 2rem;
+  }
+  .tagline {
+    font-size: 1rem;
   }
 }

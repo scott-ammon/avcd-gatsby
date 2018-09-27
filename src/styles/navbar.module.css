@@ -4,8 +4,9 @@
   text-decoration: none;
   background-image: none;
   text-shadow: none;
-  margin: 0 1rem;
-  padding-bottom: 16px;
+  margin: 0 1.2rem;
+  padding-top: 8px;
+  padding-bottom: 17px;
   color: white;
 }
 
@@ -31,12 +32,13 @@
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   background-color: none;
   overflow: hidden;
   position: fixed;
   top: 0;
+  padding-top: 10px;
   width: 100%;
   z-index: 99;
 }
@@ -55,17 +57,6 @@
 
 a {
   background-image: none;
-}
-
-.headerRight {
-  margin-right: 1rem;
-}
-
-.logo {
-  width: 50px;
-  height: 50px;
-  margin: 9px 0 0 20px;
-  padding: 0;
 }
 
 .activeTest {
