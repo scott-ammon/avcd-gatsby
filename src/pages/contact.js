@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styles from "../styles/contact.module.css"
+import logo from '../img/avcd.png'
 
 class ContactPage extends Component {
   constructor(props) {
@@ -19,9 +20,7 @@ class ContactPage extends Component {
     return  (
       <div className={styles.container}>
         <h1 className={styles.title}>Contact Us</h1>
-        <div>
-          <p className={styles.tagline}>Don't hesitate to reach out to us. We'll get back to you shortly!</p>
-        </div>
+        <p className={styles.tagline}>Don't hesitate to reach out to us. We'll get back to you shortly!</p>
         <form className={styles.contactFlex} 
               method="POST"
               action="https://formspree.io/scott.o.ammon@gmail.com"
@@ -70,7 +69,7 @@ class ContactPage extends Component {
           <p>*Indicates required field</p>
           <button>Submit</button>
         </form>
-        
+        <img src={logo} className={styles.logo}></img>
       </div>
     )
   }
