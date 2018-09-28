@@ -1,12 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import MediaQuery from 'react-responsive';
-
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import MobileMenu from '../components/MobileMenu'
-// import './index.css'
 import styles from '../styles/layout.module.css'
 
 const Layout = ({ children, data }) => (
@@ -19,10 +15,8 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <MediaQuery query="(max-width: 550px)">
-      <MobileMenu></MobileMenu>
-    </MediaQuery>
-    <Navbar stuff={children}/>
+    
+    <Navbar/>
     <div className={styles.container}>
       {children()}
     </div>

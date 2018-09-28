@@ -20,7 +20,7 @@ class MobileMenu extends React.Component {
         top: '18px'
       },
       bmBurgerBars: {
-        background: 'black',
+        background: this.props.burgerColor,
         height: '10%'
       },
       bmCrossButton: {
@@ -70,7 +70,6 @@ class MobileMenu extends React.Component {
         <Link className={styles.menuItem} to="/">Home</Link>
         <Link className={styles.menuItem} to="/about">About</Link>
         <Link className={styles.menuItem} to="/projects">Projects</Link>
-        <Link className={styles.menuItem} to="/testimonials">Testimonials</Link>
         <Link className={styles.menuItem} to="/contact">Contact</Link>
       </Menu>
     );

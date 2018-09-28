@@ -3,6 +3,8 @@ import Link from 'gatsby-link'
 import styles from '../styles/navbar.module.css'
 import classNames from 'classnames'
 import { withRouter } from 'react-router-dom'
+import MediaQuery from 'react-responsive';
+import MobileMenu from '../components/MobileMenu'
 
 var newWindow = null;
 
@@ -22,7 +24,8 @@ class Navbar extends Component {
     }
     this.state = {
       nav: navStyle,
-      link: linkStyle
+      link: linkStyle,
+      burgerColor: 'red'
     }
     this.handleClick = this.handleClick.bind(this)
     this.handleScroll = this.handleScroll.bind(this)
@@ -36,12 +39,14 @@ class Navbar extends Component {
       if(newWindow.pageYOffset > 0) {
         this.setState({
           nav: styles.headerTwo,
-          link: styles.navBlack
+          link: styles.navBlack,
+          burgerColor: 'black'
         }) 
       } else if (newWindow.pageYOffset === 0) {
         this.setState({
           nav: styles.headerOne,
-          link: styles.navWhite
+          link: styles.navWhite,
+          burgerColor: 'red'
         })
       }
     }
@@ -50,7 +55,8 @@ class Navbar extends Component {
   handleClick = (e) => {
     this.setState({
       nav: styles.headerTwo,
-      link: styles.navBlack
+      link: styles.navBlack,
+      burgerColor: 'black'
     }) 
   }
 
@@ -60,12 +66,19 @@ class Navbar extends Component {
   }
 
   render() {
+    let activeStyle = this.state.nav === styles.headerOne ? styles.activeWhite : styles.activeBlack
+
     return (
-      <div className={classNames(this.state.nav, styles.nav)}>
-        <Link exact to="/" onClick={this.handleClick} className={classNames(this.state.link, styles.navLink)} activeClassName={styles.active}>Home</Link>
-        <Link to="/about" onClick={this.handleClick} className={classNames(this.state.link, styles.navLink)} activeClassName={styles.active}>About</Link>
-        <Link to="/projects" onClick={this.handleClick} className={classNames(this.state.link, styles.navLink)} activeClassName={styles.active}>Projects</Link>
-        <Link to="/contact" onClick={this.handleClick} className={classNames(this.state.link, styles.navLink)} activeClassName={styles.active}>Contact</Link>
+      <div>
+        <MediaQuery query="(max-width: 550px)">
+          <MobileMenu burgerColor={this.state.burgerColor}></MobileMenu>
+        </MediaQuery>
+        <div className={classNames(this.state.nav, styles.nav)}>
+          <Link exact to="/" onClick={this.handleClick} className={classNames(this.state.link, styles.navLink)} activeClassName={activeStyle}>Home</Link>
+          <Link to="/about" onClick={this.handleClick} className={classNames(this.state.link, styles.navLink)} activeClassName={styles.activeBlack}>About</Link>
+          <Link to="/projects" onClick={this.handleClick} className={classNames(this.state.link, styles.navLink)} activeClassName={styles.activeBlack}>Projects</Link>
+          <Link to="/contact" onClick={this.handleClick} className={classNames(this.state.link, styles.navLink)} activeClassName={styles.activeBlack}>Contact</Link>
+        </div>
       </div>
     )
   }

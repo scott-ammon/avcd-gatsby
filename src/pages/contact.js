@@ -41,19 +41,20 @@ class ContactPage extends Component {
             className={styles.contactInput}
             required
           />
-          <label>Project</label>
+          <label>Phone</label>
           <input
-            name="project"
+            name="phone"
             type="text"
             className={styles.contactInput}
           />
-          <label>New Build or Refit</label>
-          <input
-            name="build"
-            type="text"
-            className={styles.contactInput}
-          />
-          <label>Timing for Project</label>
+          <label>Select Project Type:</label>
+          <select>
+            <option value="marine-newbuild">Marine New Build</option>
+            <option value="marine-refit">Marine Refit</option>
+            <option value="residential-new">Residential New</option>
+            <option value="residential-remodel">Residential Remodel</option>
+          </select>
+          <label>Desired Project Timing</label>
           <input
             name="timing"
             type="text"
