@@ -49,13 +49,13 @@
 
 .headerOne {
   height: 100px;
-  transition: 0.3s ease;
+  transition: 0.5s ease;
 }
 
 .headerTwo {
   height: 60px;
   background: white;
-  transition: 0.7s ease;
+  transition: 1s ease;
   box-shadow: 0 0.125rem 1.25rem rgba(0,0,0,.2);
 }
 

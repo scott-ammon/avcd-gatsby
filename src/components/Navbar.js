@@ -25,10 +25,11 @@ class Navbar extends Component {
     this.state = {
       nav: navStyle,
       link: linkStyle,
-      burgerColor: 'red'
+      burgerColor: 'white'
     }
     this.handleClick = this.handleClick.bind(this)
     this.handleScroll = this.handleScroll.bind(this)
+    this.handleHomeClick = this.handleHomeClick.bind(this)
   }
 
   handleScroll = (e) => {
@@ -46,7 +47,7 @@ class Navbar extends Component {
         this.setState({
           nav: styles.headerOne,
           link: styles.navWhite,
-          burgerColor: 'red'
+          burgerColor: 'white'
         })
       }
     }
@@ -60,6 +61,13 @@ class Navbar extends Component {
     }) 
   }
 
+  handleHomeClick = e => {
+    this.setState({
+      nav: styles.headerOne,
+      link: styles.navWhite,
+    }) 
+  }
+
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
     newWindow = window;
@@ -67,14 +75,14 @@ class Navbar extends Component {
 
   render() {
     let activeStyle = this.state.nav === styles.headerOne ? styles.activeWhite : styles.activeBlack
-
+   
     return (
       <div>
         <MediaQuery query="(max-width: 550px)">
-          <MobileMenu burgerColor={this.state.burgerColor}></MobileMenu>
+          <MobileMenu burgerClick={this.handleClick} burgerColor={this.state.burgerColor}></MobileMenu>
         </MediaQuery>
         <div className={classNames(this.state.nav, styles.nav)}>
-          <Link exact to="/" onClick={this.handleClick} className={classNames(this.state.link, styles.navLink)} activeClassName={activeStyle}>Home</Link>
+          <Link exact to="/" onClick={this.handleHomeClick} className={classNames(this.state.link, styles.navLink)} activeClassName={activeStyle}>Home</Link>
           <Link to="/about" onClick={this.handleClick} className={classNames(this.state.link, styles.navLink)} activeClassName={styles.activeBlack}>About</Link>
           <Link to="/projects" onClick={this.handleClick} className={classNames(this.state.link, styles.navLink)} activeClassName={styles.activeBlack}>Projects</Link>
           <Link to="/contact" onClick={this.handleClick} className={classNames(this.state.link, styles.navLink)} activeClassName={styles.activeBlack}>Contact</Link>
