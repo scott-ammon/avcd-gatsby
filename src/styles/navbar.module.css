@@ -15,7 +15,7 @@
 }
 
 .navBlack {
-  color: black;
+  color: white;
 }
 
 .navWhite:hover {
@@ -23,7 +23,7 @@
 }
 
 .navBlack:hover {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #fff;
 }
 
 .activeWhite {
@@ -31,7 +31,7 @@
 }
 
 .activeBlack {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #fff;
 }
 
 .nav {
@@ -54,9 +54,9 @@
 
 .headerTwo {
   height: 60px;
-  background: white;
+  background: #0d2b45;
   transition: 1s ease;
-  box-shadow: 0 0.125rem 1.25rem rgba(0,0,0,.2);
+  box-shadow: 0 0.125rem 1.25rem rgba(0,0,0,.8);
 }
 
 a {

@@ -24,7 +24,6 @@ class IndexPage extends Component {
           <div className={styles.container}>
             <div className={styles.headerFlex}>
               <img className={styles.logo} src={logo}></img>
-              {/* <h1 className={styles.headerTitle}>AV Concepts & Design</h1> */}
               <h2 className={styles.description}>
                 We are a team of professional 
                 audio/video engineers and systems integrators offering 

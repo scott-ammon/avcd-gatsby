@@ -10,19 +10,18 @@ const AboutPage = (props) => (
     </h5>
     <p>
       AV Concepts and Design, Inc. has been successfully placing state of the art entertainment 
-      systems in yacht projects for the past 16 years, building outstanding and ongoing relationships 
+      systems in yacht projects since 1992, while building outstanding and ongoing relationships 
       with national and international shipbuilders on both new builds and refits. We are equally 
-      experienced placing audio/video, data/networking, lighting, and security systems in private 
-      residence, in new construction as well as home remodels.
+      experienced placing audio/video, data/networking, lighting, and security systems into private 
+      residences, be it new construction or remodels.
       <br></br>
       <br></br>
-      With over 25 years of experience in the industry, owner and founder Steven Segall has assembled 
+      With nearly 30 years of experience in the industry, owner and founder Steven Segall has assembled 
       a team of highly skilled professionals including engineers, AutoCAD professionals, lighting designers, 
       programmers, and technical installers, all dedicated to customer service and pride in craftsmanship. 
       Our team is continually testing and researching applications to bring our clients the latest and most 
       sophisticated technologies, backed by open communication, and readily accessible world-wide support. 
-      We are keenly aware that other companies in the marketplace do what we do, and confident that our experience 
-      and customer service will always set us apart from our competitors.
+      We are confident that our experience and customer service will always set us apart from our competitors.
     </p>
   </div>
 )
