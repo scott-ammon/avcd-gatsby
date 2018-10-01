@@ -162,7 +162,7 @@ hr {
     padding: .5rem;
   }
   .background {
-    background-attachment: none;
+    background-attachment: scroll;
   }
 }
 
