@@ -22,6 +22,7 @@
 
 .logo {
   max-width: 30%;
+  margin-left: 3rem;
 }
 
 .headerTitle,
@@ -143,6 +144,7 @@ hr {
   }
   .logo {
     max-width: 60%;
+    margin-left: 1.2rem;
   }
   .support,
   .management {

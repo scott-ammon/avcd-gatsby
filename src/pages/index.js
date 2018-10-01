@@ -30,7 +30,7 @@ class IndexPage extends Component {
                 customized technology solutions for the discerning client.
                 <br></br>
                 <br></br>
-                <span className={styles.tagline}>Where Elegance Embraces Technology</span>
+                <span className={styles.tagline}>"Where Elegance Embraces Technology"</span>
               </h2>
             </div>
           </div>

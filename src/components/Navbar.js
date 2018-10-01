@@ -41,7 +41,7 @@ class Navbar extends Component {
         this.setState({
           nav: styles.headerTwo,
           link: styles.navBlack,
-          burgerColor: 'black'
+          burgerColor: 'white'
         }) 
       } else if (newWindow.pageYOffset === 0) {
         this.setState({
@@ -57,7 +57,7 @@ class Navbar extends Component {
     this.setState({
       nav: styles.headerTwo,
       link: styles.navBlack,
-      burgerColor: 'black'
+      burgerColor: 'white'
     }) 
   }
 
@@ -79,7 +79,7 @@ class Navbar extends Component {
     return (
       <div>
         <MediaQuery query="(max-width: 550px)">
-          <MobileMenu burgerClick={this.handleClick} burgerColor={this.state.burgerColor}></MobileMenu>
+          <MobileMenu homeClick={this.handleHomeClick} burgerClick={this.handleClick} burgerColor={this.state.burgerColor}></MobileMenu>
         </MediaQuery>
         <div className={classNames(this.state.nav, styles.nav)}>
           <Link exact to="/" onClick={this.handleHomeClick} className={classNames(this.state.link, styles.navLink)} activeClassName={activeStyle}>Home</Link>

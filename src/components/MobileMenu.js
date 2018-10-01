@@ -67,7 +67,7 @@ class MobileMenu extends React.Component {
 
     return (
       <Menu isOpen={this.state.menuOpen} right styles={styles}>
-        <Link className={styles.menuItem} to="/">Home</Link>
+        <Link className={styles.menuItem} to="/" onClick={this.props.homeClick}>Home</Link>
         <Link className={styles.menuItem} to="/about" onClick={this.props.burgerClick}>About</Link>
         <Link className={styles.menuItem} to="/projects" onClick={this.props.burgerClick}>Projects</Link>
         <Link className={styles.menuItem} to="/contact" onClick={this.props.burgerClick}>Contact</Link>
