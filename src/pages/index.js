@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styles from '../styles/index.module.css'
-import logo from '../img/avcdWhite.png'
+import logo from '../img/avcdWhiteSmall.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLock } from '@fortawesome/free-solid-svg-icons'
 import { faHandshake } from '@fortawesome/free-solid-svg-icons'
