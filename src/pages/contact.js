@@ -69,7 +69,7 @@ class ContactPage extends Component {
           <p>*Indicates required field</p>
           <button>Submit</button>
         </form>
-        <img src={logo} className={styles.logo}></img>
+        {/* <img src={logo} className={styles.logo}></img> */}
       </div>
     )
   }
