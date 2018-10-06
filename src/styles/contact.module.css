@@ -23,13 +23,15 @@
   align-items: flex-start;
 }
 
+.logoWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
-  position: fixed;
-  top: 45%;
-  left: 75%;
-  max-width: 30%;
-  transform: translate(-50%, -50%);
-  z-index: -999;
+  margin-top: 3rem;
+  width: auto;
+  height: 400px;
   opacity: .2;
 }
 
@@ -65,7 +67,7 @@ option {
 }
 
 textarea {
-  width: 600px;
+  width: 500px;
 }
 
 input:focus,
@@ -86,9 +88,21 @@ button:hover {
   opacity: 0.7;
 }
 
+@media (max-width: 1200px) {
+  .logo {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .logo {
     display: none;
+  }
+  .logoWrapper {
+    display: block;
+  }
+  textarea {
+    width: 100%;
   }
 }
 
