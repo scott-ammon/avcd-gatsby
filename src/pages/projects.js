@@ -1,6 +1,6 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styles from '../styles/projects.module.css'
+
 import adler from '../img/adler/1.jpg'
 import bigfish from '../img/big-fish/1.jpg'
 import cakewalk62 from '../img/cakewalk62/1.jpg'
@@ -20,6 +20,12 @@ import condo from '../img/condo.jpg'
 import maramarack from '../img/maramarack.jpg'
 import yacht from '../img/yacht-no-name.png'
 import tv from '../img/tv.jpg'
+import meaculpa1 from '../img/mea-culpa1.jpg'
+import meaculpa2 from '../img/mea-culpa2.jpg'
+import yachtnoname from '../img/yacht-no-name2.png'
+import rack1 from '../img/rack1.jpg'
+import rack2 from '../img/rack2.jpg'
+import rack3 from '../img/rack3.jpg'
 
 const ProjectsPage = () => (
   <div className={styles.container}>
@@ -31,118 +37,76 @@ const ProjectsPage = () => (
     </p>
     <div className={styles.projectsGrid}>
       <div className={styles.projectCard}>
+        <img src={yachtnoname}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={meaculpa2}></img>
+      </div>
+      <div className={styles.projectCard}>
         <img src={condo}></img>
-        <Link to='/' className={styles.overlay}>
-          <div className={styles.projectName}>Condo</div>
-        </Link>
       </div>
       <div className={styles.projectCard}>
         <img src={tv}></img>
-        <Link to='/' className={styles.overlay}>
-          <div className={styles.projectName}>Yacht TV</div>
-        </Link>
       </div>
       <div className={styles.projectCard}>
         <img src={maramarack}></img>
-        <Link to='/' className={styles.overlay}>
-          <div className={styles.projectName}>AV Rack</div>
-        </Link>
       </div>
       <div className={styles.projectCard}>
         <img src={yacht}></img>
-        <Link to='/' className={styles.overlay}>
-          <div className={styles.projectName}>Yacht</div>
-        </Link>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={rack1}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={meaculpa1}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={rack2}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={rack3}></img>
       </div>
       <div className={styles.projectCard}>
         <img src={bigfish}></img>
-        <Link to='/' className={styles.overlay}>
-          <div className={styles.projectName}>M/Y Big Fish</div>
-        </Link>
       </div>
       <div className={styles.projectCard}>
         <img src={cakewalk62}></img>
-        <Link to='/' className={styles.overlay}>
-          <div className={styles.projectName}>M/Y Cakewalk 62m</div>
-        </Link>
       </div>
       <div className={styles.projectCard}>
         <img src={cakewalk85}></img>
-        <Link to='/' className={styles.overlay}>
-          <div className={styles.projectName}>M/Y Cakewalk 85m</div>
-        </Link>
-      </div>
-      <div className={styles.projectCard}>
-        <img src={adler}></img>
-        <Link to='/' className={styles.overlay}>
-          <div className={styles.projectName}>M/Y Adler</div>
-        </Link>
-      </div>
-      <div className={styles.projectCard}>
-        <img src={glendinning}></img>
-        <Link to='/' className={styles.overlay}>
-          <div className={styles.projectName}>Glendinning Residence</div>
-        </Link>
-      </div>
-      <div className={styles.projectCard}>
-        <img src={happydays}></img>
-        <Link to='/happy-days' className={styles.overlay}>
-          <div className={styles.projectName}>M/Y Happy Days</div>
-        </Link>
-      </div>
-      <div className={styles.projectCard}>
-        <img src={illusion}></img>
-        <Link to='/' className={styles.overlay}>
-          <div className={styles.projectName}>M/Y Illusion</div>
-        </Link>
-      </div>
-      <div className={styles.projectCard}>
-        <img src={kisses}></img>
-        <Link to='/' className={styles.overlay}>
-          <div className={styles.projectName}>M/Y Kisses</div>
-        </Link>
-      </div>
-      <div className={styles.projectCard}>
-        <img src={misslisa}></img>
-        <Link to='/' className={styles.overlay}>
-          <div className={styles.projectName}>M/Y Miss Lisa</div>
-        </Link>
-      </div>
-      <div className={styles.projectCard}>
-        <img src={marama}></img>
-        <Link to='/' className={styles.overlay}>
-          <div className={styles.projectName}>M/Y Marama</div>
-        </Link>
-      </div>
-      <div className={styles.projectCard}>
-        <img src={meduse}></img>
-        <Link to='/' className={styles.overlay}>
-          <div className={styles.projectName}>M/Y Meduse</div>
-        </Link>
-      </div>
-      <div className={styles.projectCard}>
-        <img src={mrterrible}></img>
-        <Link to='/' className={styles.overlay}>
-          <div className={styles.projectName}>M/Y Mr. Terrible</div>
-        </Link>
-      </div>
-      <div className={styles.projectCard}>
-        <img src={phoenix}></img>
-        <Link to='/' className={styles.overlay}>
-          <div className={styles.projectName}>M/Y Phoenix</div>
-        </Link>
-      </div>
-      <div className={styles.projectCard}>
-        <img src={polarbear}></img>
-        <Link to='/' className={styles.overlay}>
-          <div className={styles.projectName}>M/Y Polar Bear</div>
-        </Link>
       </div>
       <div className={styles.projectCard}>
         <img src={slojo}></img>
-        <Link to='/' className={styles.overlay}>
-          <div className={styles.projectName}>M/Y Slojo</div>
-        </Link>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={happydays}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={glendinning}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={mrterrible}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={phoenix}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={polarbear}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={kisses}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={misslisa}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={marama}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={meduse}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={illusion}></img>
       </div>
     </div>
   </div>
