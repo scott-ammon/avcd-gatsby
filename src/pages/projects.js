@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from '../styles/projects.module.css'
-import adler from '../img/adler/1.jpg'
 import bigfish from '../img/big-fish/1.jpg'
 import cakewalk62 from '../img/cakewalk62/1.jpg'
 import cakewalk85 from '../img/cakewalk85/1.jpg'
@@ -25,6 +24,7 @@ import yachtnoname from '../img/yacht-no-name2.png'
 import rack1 from '../img/rack1.jpg'
 import rack2 from '../img/rack2.jpg'
 import rack3 from '../img/rack3.jpg'
+import onika from '../img/onika.jpg'
 
 const ProjectsPage = () => (
   <div className={styles.container}>
@@ -40,6 +40,9 @@ const ProjectsPage = () => (
       </div>
       <div className={styles.projectCard}>
         <img src={meaculpa2}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={onika}></img>
       </div>
       <div className={styles.projectCard}>
         <img src={condo}></img>

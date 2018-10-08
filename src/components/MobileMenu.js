@@ -33,11 +33,10 @@ class MobileMenu extends React.Component {
         background: 'white'
       },
       bmMenu: {
-        // background: '#373a47',
         height: '100vh',
         padding: '2.5em 1.5em 0',
         fontSize: '1.15em',
-        backgroundImage: 'linear-gradient(-20deg,#003661,#004985)'
+        backgroundImage: 'linear-gradient(-20deg, #184F7F, #0d2b45)'
       },
       bmMorphShape: {
         fill: '#373a47'
