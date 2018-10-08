@@ -76,7 +76,7 @@ textarea:focus {
 }
 
 button {
-  background: #0066D1;
+  background: #24A879; /*#0066D1; */
   color: white;
   border-radius: 3px;
   border: none;
