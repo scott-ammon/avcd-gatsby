@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from '../styles/projects.module.css'
-
 import adler from '../img/adler/1.jpg'
 import bigfish from '../img/big-fish/1.jpg'
 import cakewalk62 from '../img/cakewalk62/1.jpg'
