@@ -36,16 +36,16 @@ const ProjectsPage = () => (
     </p>
     <div className={styles.projectsGrid}>
       <div className={styles.projectCard}>
-        <img src={yachtnoname}></img>
-      </div>
-      <div className={styles.projectCard}>
-        <img src={meaculpa2}></img>
-      </div>
-      <div className={styles.projectCard}>
         <img src={onika}></img>
       </div>
       <div className={styles.projectCard}>
         <img src={condo}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={yachtnoname}></img>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={meaculpa2}></img>
       </div>
       <div className={styles.projectCard}>
         <img src={tv}></img>
