@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styles from '../styles/projects.module.css'
-import yacht from '../img/happy-days.jpg'
 import adler from '../img/adler/1.jpg'
 import bigfish from '../img/big-fish/1.jpg'
 import cakewalk62 from '../img/cakewalk62/1.jpg'
@@ -17,16 +16,44 @@ import mrterrible from '../img/mr-terrible/1.jpg'
 import phoenix from '../img/phoenix/1.jpg'
 import polarbear from '../img/polar-bear/1.jpg'
 import slojo from '../img/slojo/1.jpg'
+import condo from '../img/condo.jpg'
+import maramarack from '../img/maramarack.jpg'
+import yacht from '../img/yacht-no-name.png'
+import tv from '../img/tv.jpg'
 
 const ProjectsPage = () => (
   <div className={styles.container}>
-    <h1 className={styles.title}>Select Projects</h1>
+    <h1 className={styles.title}>Project Gallery</h1>
     <p>
       Many of our projects cannot be shown, out of respect for our clients’ privacy. We welcome 
       you to contact us with specific inquiries about the wide range of yachts, private residences, 
       and other locations in which we have worked for over 20 years.
     </p>
     <div className={styles.projectsGrid}>
+      <div className={styles.projectCard}>
+        <img src={condo}></img>
+        <Link to='/' className={styles.overlay}>
+          <div className={styles.projectName}>Condo</div>
+        </Link>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={tv}></img>
+        <Link to='/' className={styles.overlay}>
+          <div className={styles.projectName}>Yacht TV</div>
+        </Link>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={maramarack}></img>
+        <Link to='/' className={styles.overlay}>
+          <div className={styles.projectName}>AV Rack</div>
+        </Link>
+      </div>
+      <div className={styles.projectCard}>
+        <img src={yacht}></img>
+        <Link to='/' className={styles.overlay}>
+          <div className={styles.projectName}>Yacht</div>
+        </Link>
+      </div>
       <div className={styles.projectCard}>
         <img src={bigfish}></img>
         <Link to='/' className={styles.overlay}>

@@ -3,6 +3,11 @@
   width: 80vw;
 }
 
+.containerContent {
+  margin: 5rem auto 0 auto;
+  width: 100%;
+}
+
 .background {
   background-image: url('../img/waves2.png');
   width: 100%;
@@ -68,17 +73,61 @@
   color: white;
 }
 
-.flexContainer {
-  display: flex;
-  justify-content: space-around;
-  padding: 3rem 0 6rem 0;
+.boxSystems,
+.boxServices,
+.boxSupport {
+  height: 500px;
+  padding: 3rem;
+  margin: 0;
+  background: rgba(0, 0, 0, .03);
+  box-shadow: 0 0.125rem 1.25rem rgba(0,0,0,.2);
+
 }
 
-.flexContainer div {
-  margin: 1rem;
-  padding: 2rem;
-  width: 400px;
-  box-shadow: 0 0.125rem 1.25rem rgba(0,0,0,.2);
+.boxSystems {
+  width: 500px;
+}
+
+.boxSystems,
+.boxServices {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.boxSupport {
+  width: 500px;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.boxServices {
+  width: 500px;
+}
+
+.imageOne,
+.imageTwo,
+.imageThree {
+  margin: 1rem 0 1rem 0;
+  height: 500px;
+}
+
+.imageOne,
+.imageThree {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.imageTwo {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.imageThree {
+  max-width: 900px;
+}
+
+.flexCapability,
+.flexCapabilityTwo {
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .support,
@@ -110,13 +159,6 @@ hr {
 }
 
 @media (max-width: 1100px) {
-  .flexContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-  .flexContainer div {
-    width: 500px;
-  }
   .mgmtFlex {
     flex-direction: column;
     align-items:center;
@@ -131,22 +173,35 @@ hr {
   .tagline {
     font-size: 1.25rem;
   }
+  .flexCapability {
+    flex-direction: column;
+  }
+  .flexCapabilityTwo {
+    flex-direction: column-reverse;
+  }
+  .boxServices,
+  .boxSupport,
+  .boxSystems {
+    border-radius: 1rem;
+  }
+
+  .imageOne,
+  .imageTwo,
+  .imageThree {
+    border-radius: 1rem;
+    max-width: 90vw;
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
-  .flexContainer,
   .headerFlex {
     flex-direction: column;
     padding: 3rem 0 3rem 0;
-  }
-  .headerFlex {
     justify-content: flex-start;
     padding-top: 6rem;
   }
-  .flexContainer {
-    padding-top: 2rem;
-  }
-  .flexContainer div {
+  .boxContainer {
     width: 70vw;
   }
   .logo {
@@ -164,6 +219,17 @@ hr {
   .background {
     background-attachment: scroll;
   }
+  .flexCapability,
+  .flexCapabilityTwo {
+    margin-bottom: 2rem;
+  }
+  .boxServices,
+  .boxSupport,
+  .boxSystems {
+    border-radius: 1rem;
+    width: 90vw;
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 550px) {
@@ -171,7 +237,7 @@ hr {
     margin: 0 auto;
     width: 90vw;
   }
-  .flexContainer div {
+  .boxContainer {
     width: 90vw;
   }
   .headerFlex {

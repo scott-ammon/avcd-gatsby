@@ -7,6 +7,11 @@ import { faHandshake } from '@fortawesome/free-solid-svg-icons'
 import { faFile } from '@fortawesome/free-solid-svg-icons'
 import { faUsers } from '@fortawesome/free-solid-svg-icons'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import mediaRack from '../img/media-rack.jpg'
+import meaculpa from '../img/meaculpa.jpg'
+import savannah from '../img/savannah.jpg'
+import tv from '../img/tv.jpg'
+import rackComposite from '../img/rack-composite.jpg'
 
 import * as Scroll from 'react-scroll'
 const Element = Scroll.Element;
@@ -36,51 +41,60 @@ class IndexPage extends Component {
           </div>
         </div>
         <div className={styles.clickMe}><ScrollLink to='scrollHere' smooth={true} offset={-50}><FontAwesomeIcon className={styles.downArrow} icon={faArrowDown} size='2x'/></ScrollLink></div>
-          <div id="container" className={styles.container}>
           <Element name="scrollHere"></Element>
-            <div className={styles.flexContainer}>
-              <div>
-                <h2>Systems We Design & Build</h2>
-                <ul>
-                  <li>Custom Audio/Video Entertainment Systems</li>
-                  <li>Dedicated Digital Surround Sound Theater</li>
-                  <li>Satellite (domestic and foreign)</li>
-                  <li>Media Storage Systems/On-Demand Audio/Video</li>
-                  <li>Lighting Design and Control Systems</li>
-                  <li>Data/Networking</li>
-                  <li>Phone Systems</li>
-                  <li>Security Systems</li>
-                </ul>
+            <div className={styles.containerContent}>
+              <div className={styles.flexCapability}>
+                <div className={styles.boxSystems}>
+                  <h2>Systems We Design & Build</h2>
+                  <ul>
+                    <li>Custom Audio/Video Entertainment Systems</li>
+                    <li>Dedicated Digital Surround Sound Theater</li>
+                    <li>Satellite (domestic and foreign)</li>
+                    <li>Media Storage Systems/On-Demand Audio/Video</li>
+                    <li>Lighting Design and Control Systems</li>
+                    <li>Data/Networking</li>
+                    <li>Phone Systems</li>
+                    <li>Security Systems</li>
+                  </ul>
+                </div>
+                <img src={tv} className={styles.imageOne}></img>
               </div>
-              <div>
-                <h2>Who We Support</h2>
-                <h4>Marine</h4>
-                <ul>
-                  <li>Yachts</li>
-                  <li>Fishing Vessels</li>
-                  <li>Expedition Vessels</li>
-                </ul>
-                <h4>Residential</h4>
-                <ul>
-                  <li>Single Dwelling</li>
-                  <li>Estates</li>
-                  <li>Ranches / Lodges</li>
-                </ul>
+              <div className={styles.flexCapabilityTwo}>
+                <img src={meaculpa} className={styles.imageTwo}></img>
+                <div className={styles.boxSupport}>
+                  <h2>Who We Support</h2>
+                  <h4>Marine</h4>
+                  <ul>
+                    <li>Yachts</li>
+                    <li>Fishing Vessels</li>
+                    <li>Expedition Vessels</li>
+                  </ul>
+                  <h4>Residential</h4>
+                  <ul>
+                    <li>Single Dwelling</li>
+                    <li>Estates</li>
+                    <li>Ranches / Lodges</li>
+                  </ul>
+                </div>
               </div>
-              <div>
-                <h2>Services We Offer</h2>
-                <ul>
-                  <li>Site Surveys</li>
-                  <li>Written Specifications</li>
-                  <li>Project Management</li>
-                  <li>AutoCAD Engineering</li>
-                  <li>Procurement</li>
-                  <li>Installation</li>
-                  <li>Programming & Commissioning</li>
-                  <li>Ongoing Support 24/7</li>
-                </ul>
+              <div className={styles.flexCapability}>
+                <div className={styles.boxServices}>
+                  <h2>Services We Offer</h2>
+                  <ul>
+                    <li>Site Surveys</li>
+                    <li>Written Specifications</li>
+                    <li>Project Management</li>
+                    <li>AutoCAD Engineering</li>
+                    <li>Procurement</li>
+                    <li>Installation</li>
+                    <li>Programming & Commissioning</li>
+                    <li>Ongoing Support 24/7</li>
+                  </ul>
+                </div>
+                <img src={savannah} className={styles.imageThree}></img>
               </div>
             </div>
+          <div className={styles.container}>
             <hr></hr>
             <div className={styles.management}>
               <h2>Management Approach</h2>

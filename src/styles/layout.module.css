@@ -29,13 +29,22 @@ h1, h2 {
   color: #003661;
 }
 
+h4 {
+  margin-bottom: .25rem;
+}
+
 p, li, a, label {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 
 svg {
-  color: #082C7F;
+  /* color: #082C7F; */
+  color: rgba(0, 0, 0, 0.7);
+}
+
+ul {
+  list-style-type: circle;
 }
 
 @media (max-width: 1000px) {
