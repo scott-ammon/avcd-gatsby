@@ -19,8 +19,8 @@ import condo from '../img/condo.jpg'
 import maramarack from '../img/maramarack2.jpg'
 import yacht from '../img/yacht-no-name.png'
 import tv from '../img/tv.jpg'
-import meaculpa1 from '../img/mea-culpa1.jpg'
-import meaculpa2 from '../img/mea-culpa2.jpg'
+import meaculpa1 from '../img/meaculpa1.jpg'
+import meaculpa2 from '../img/meaculpa2.jpg'
 import yachtnoname from '../img/yacht-no-name2.png'
 import rack1 from '../img/rack1.jpg'
 import rack2 from '../img/rack2.jpg'
@@ -48,7 +48,7 @@ const ProjectsPage = () => (
         <img src={tv}></img>
       </div>
       <div className={styles.projectCard}>
-        <img src={maramarack2}></img>
+        <img src={maramarack}></img>
       </div>
       <div className={styles.projectCard}>
         <img src={yacht}></img>
