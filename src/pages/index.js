@@ -57,7 +57,7 @@ class IndexPage extends Component {
                     <li>Security Systems</li>
                   </ul>
                 </div>
-                <img src={tv} className={styles.imageOne}></img>
+                <img src={savannah} className={styles.imageOne}></img>
               </div>
               <div className={styles.flexCapabilityTwo}>
                 <img src={meaculpa} className={styles.imageTwo}></img>

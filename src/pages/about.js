@@ -20,7 +20,7 @@ const AboutPage = (props) => (
       a team of highly skilled professionals including engineers, AutoCAD professionals, lighting designers, 
       programmers, and technical installers, all dedicated to customer service and pride in craftsmanship. 
       Our team is continually testing and researching applications to bring our clients the latest and most 
-      sophisticated technologies, backed by open communication, and readily accessible world-wide support. 
+      sophisticated technologies, backed by open communication, and readily accessible world-wide support 365 days/year. 
       We are confident that our experience and customer service will always set us apart from our competitors.
     </p>
   </div>
