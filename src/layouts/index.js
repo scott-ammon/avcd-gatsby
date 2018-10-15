@@ -12,19 +12,19 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Audio Video Concepts & Design, custom AV systems for yachts and residential spaces.' },
+        { name: 'keywords', content: 'AVCD, audio video systems, yacht audio, marine audio, boat audio, seattle av systems' },
       ]}
       link={[
         { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
       ]}
     />
     
-    <Navbar/>
+    <Navbar />
     <div className={styles.container}>
       {children()}
     </div>
-    <Footer></Footer>
+    <Footer />
   </div>
 )
 
