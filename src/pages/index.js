@@ -11,7 +11,6 @@ import mediaRack from '../img/media-rack.jpg'
 import meaculpa from '../img/meaculpa.jpg'
 import savannah from '../img/savannah.jpg'
 import tv from '../img/tv.jpg'
-import rackComposite from '../img/rack-composite.jpg'
 
 import * as Scroll from 'react-scroll'
 const Element = Scroll.Element;

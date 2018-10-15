@@ -19,7 +19,7 @@ const Footer = () => (
         <p className={styles.number}>Phone:	+1 (425) 881-5621</p>
       </div>
     </div>
-    <p className = {styles.copyright}>&copy; 2018 SOA | <Link className={styles.privacy} to="/privacy">Privacy</Link></p> 
+    <p className = {styles.copyright}>&copy; 2018 SOA | Built with React</p> 
   </div>
 )
 
