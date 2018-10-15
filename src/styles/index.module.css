@@ -79,9 +79,11 @@
   height: 500px;
   padding: 3rem;
   margin: 0;
-  background: rgba(0, 0, 0, .03);
   box-shadow: 0 0.125rem 1.25rem rgba(0,0,0,.2);
+}
 
+.boxSupport h4 {
+  margin-bottom: .5rem;
 }
 
 .boxSystems {
@@ -90,12 +92,12 @@
 
 .boxSystems,
 .boxServices {
-  border-radius: 0 1rem 1rem 0;
+  /* border-radius: 0 1rem 1rem 0; */
 }
 
 .boxSupport {
   width: 500px;
-  border-radius: 1rem 0 0 1rem;
+  /* border-radius: 1rem 0 0 1rem; */
 }
 
 .boxServices {
@@ -107,15 +109,16 @@
 .imageThree {
   margin: 1rem 0 1rem 0;
   height: 500px;
+  box-shadow: 0 0.125rem 1.25rem rgba(0,0,0,.2);
 }
 
 .imageOne,
 .imageThree {
-  border-radius: 1rem 0 0 1rem;
+  /* border-radius: 1rem 0 0 1rem; */
 }
 
 .imageTwo {
-  border-radius: 0 1rem 1rem 0;
+  /* border-radius: 0 1rem 1rem 0; */
 }
 
 .imageThree {
@@ -124,10 +127,19 @@
 
 .flexCapability,
 .flexCapabilityTwo {
-  margin-bottom: 10rem;
+  width: 80vw;
+  margin: 0 auto 10rem auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+}
+
+.testimonial {
+  width: 60vw;
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
+  color: #003661;
 }
 
 .support,
