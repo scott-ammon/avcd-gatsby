@@ -173,6 +173,13 @@ hr {
   font-style: italic;
 }
 
+@media (min-width: 1700px) {
+  .flexCapability,
+  .flexCapabilityTwo {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 1100px) {
   .mgmtFlex {
     flex-direction: column;
