@@ -14,7 +14,7 @@ import savannah from '../img/savannah.jpg'
 import tv from '../img/tv.jpg'
 import yacht2 from '../img/yacht2.jpeg'
 import muchoMasSalon from '../img/mucho-mas-salon.jpg'
-import cabin from '../img/cabin.jpg'
+import lodge from '../img/lodge.jpg'
 import maramarack from '../img/maramarack2.jpg'
 
 import * as Scroll from 'react-scroll'
@@ -75,7 +75,7 @@ class IndexPage extends Component {
                 </p>
               </div>
               <div className={styles.flexCapabilityTwo}>
-                <img src={muchoMasSalon} className={styles.imageTwo}></img>
+                <img src={lodge} className={styles.imageTwo}></img>
                 <div className={styles.boxSupport}>
                   <h2>Who We Support</h2>
                   <h4>Marine</h4>
@@ -118,7 +118,7 @@ class IndexPage extends Component {
                     <li>Ongoing Support 24/7</li>
                   </ul>
                 </div>
-                <img src={cabin} className={styles.imageThree}></img>
+                <img src={muchoMasSalon} className={styles.imageThree}></img>
               </div>
               <div className={classNames(styles.testimonial, styles.finalTestimonial)}>
                 <p>

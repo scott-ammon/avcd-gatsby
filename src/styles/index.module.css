@@ -83,6 +83,10 @@
   box-shadow: 0 0.125rem 1.25rem rgba(0,0,0,.2);
 }
 
+.boxSupport {
+  min-width: 34%;
+}
+
 .boxSupport h4 {
   margin-bottom: .5rem;
 }
@@ -94,6 +98,10 @@
   max-height: 100%;
   box-shadow: 0 0.125rem 1.25rem rgba(0,0,0,.2);
   max-width: 66%;
+}
+
+.imageTwo {
+  max-width: 70%;
 }
 
 .flexCapability,
