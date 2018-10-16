@@ -128,7 +128,7 @@
 .flexCapability,
 .flexCapabilityTwo {
   width: 80vw;
-  margin: 0 auto 10rem auto;
+  margin: 5rem auto 5rem auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -139,12 +139,14 @@
   margin: 0 auto;
   text-align: center;
   font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 300;
   color: #003661;
 }
 
 .support,
 .management {
-  padding: 6rem 0;
+  padding: 2rem 0;
 }
 
 hr {
@@ -191,16 +193,9 @@ hr {
   .flexCapabilityTwo {
     flex-direction: column-reverse;
   }
-  .boxServices,
-  .boxSupport,
-  .boxSystems {
-    border-radius: 1rem;
-  }
-
   .imageOne,
   .imageTwo,
   .imageThree {
-    border-radius: 1rem;
     max-width: 90vw;
     height: auto;
   }
@@ -220,6 +215,9 @@ hr {
     max-width: 40%;
     margin-left: 1.2rem;
   }
+  .testimonial {
+    width: 90vw;
+  }
   .support,
   .management {
     padding: 1rem 0;
@@ -238,8 +236,8 @@ hr {
   .boxServices,
   .boxSupport,
   .boxSystems {
-    border-radius: 1rem;
     width: 90vw;
+    height: auto;
     padding: 1rem;
   }
 }
@@ -271,6 +269,9 @@ hr {
   }
   .logo {
     max-width: 60%;
+  }
+  .testimonial {
+    font-size: 1rem;
   }
 }
 

@@ -61,7 +61,7 @@ class IndexPage extends Component {
                 <img src={savannah} className={styles.imageOne}></img>
               </div>
               <div className={styles.testimonial}>
-                <h3>
+                <p>
                   "Audio Visual Concepts & Design came onboard to improve the archaic control system of CV-9’s 
                   entertainment system that included Kaleidescape Movie & Music server, TVRO antenna & service, 
                   local disc players, and a large array amplifiers and speakers throughout the yacht. That was 
@@ -69,7 +69,7 @@ class IndexPage extends Component {
                   going to operate. In short order we had iPad controls, improved speaker systems and also detailed 
                   drawings of the entire system where the crew could easily be supported at a later time. For the next 
                   five years of heavy use we rarely had any issues to utilize that aspect." <br></br>– Captain Ethan Lee, M/Y CV-9 (2008-2016)  
-                </h3>
+                </p>
               </div>
               <div className={styles.flexCapabilityTwo}>
                 <img src={tv} className={styles.imageTwo}></img>
@@ -91,12 +91,12 @@ class IndexPage extends Component {
                 </div>
               </div>
               <div className={styles.testimonial}>
-                <h3>
+                <p>
                   "Entertainment systems are so advanced you absolutely need the most knowledgeable system designer and support available.  
                   AV Concepts has proven time and time again the ability to bring together a world of entertainment that caters to the customer’s needs.  
                   Knowledge and support have been key factors to keeping things up to date and performing with outstanding results. After working 
                   with Steve & Cindy on both new & refit projects for many years it has been a pleasure to have their support.” <br></br>- Captain John Doty, M/Y Onika
-                </h3>
+                </p>
               </div>
               <div className={styles.flexCapability}>
                 <div className={styles.boxServices}>
