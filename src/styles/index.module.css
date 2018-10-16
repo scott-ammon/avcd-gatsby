@@ -5,7 +5,7 @@
 
 .containerContent {
   margin: 5rem auto 0 auto;
-  width: 100%;
+  width: 80vw;
 }
 
 .background {
@@ -76,7 +76,8 @@
 .boxSystems,
 .boxServices,
 .boxSupport {
-  height: 500px;
+  min-width: 38%;
+  min-height: 500px;
   padding: 3rem;
   margin: 0;
   box-shadow: 0 0.125rem 1.25rem rgba(0,0,0,.2);
@@ -86,52 +87,36 @@
   margin-bottom: .5rem;
 }
 
-.boxSystems {
-  width: 500px;
-}
-
-.boxSystems,
-.boxServices {
-  /* border-radius: 0 1rem 1rem 0; */
-}
-
-.boxSupport {
-  width: 500px;
-  /* border-radius: 1rem 0 0 1rem; */
-}
-
-.boxServices {
-  width: 500px;
-}
-
 .imageOne,
 .imageTwo,
 .imageThree {
   margin: 1rem 0 1rem 0;
-  height: 500px;
+  max-height: 100%;
   box-shadow: 0 0.125rem 1.25rem rgba(0,0,0,.2);
+  max-width: 66%;
 }
 
-.imageOne,
-.imageThree {
-  /* border-radius: 1rem 0 0 1rem; */
-}
-
-.imageTwo {
-  /* border-radius: 0 1rem 1rem 0; */
-}
-
-.imageThree {
-  max-width: 900px;
+.flexCapability,
+.flexCapabilityTwo,
+.flexSupport {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
 }
 
 .flexCapability,
 .flexCapabilityTwo {
-  width: 80vw;
   margin: 5rem auto 5rem auto;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
+}
+
+.flexSupport {
+  margin: 2rem auto 5rem auto;
+  align-items: flex-start;
+}
+
+.flexSupport img {
+  max-width: 50%;
 }
 
 .testimonial {
@@ -144,7 +129,15 @@
   color: #003661;
 }
 
-.support,
+.finalTestimonial {
+  margin-bottom: 6rem;
+}
+
+.support {
+  max-width: 50%;
+  padding: 0rem 4rem 2rem 0;
+}
+
 .management {
   padding: 2rem 0;
 }
@@ -193,11 +186,29 @@ hr {
   .flexCapabilityTwo {
     flex-direction: column-reverse;
   }
+  .flexSupport {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flexSupport img {
+    max-width: 100%;
+  }
+  .support {
+    max-width: 100%;
+  }
   .imageOne,
   .imageTwo,
   .imageThree {
-    max-width: 90vw;
+    max-width: 70vw;
     height: auto;
+  }
+  .boxServices,
+  .boxSupport,
+  .boxSystems {
+    width: 70vw;
+  }
+  .testimonial {
+    margin-bottom: 7rem;
   }
 }
 
@@ -216,7 +227,11 @@ hr {
     margin-left: 1.2rem;
   }
   .testimonial {
-    width: 90vw;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .testimonial p {
+    margin-bottom: 4rem;
   }
   .support,
   .management {
@@ -231,14 +246,23 @@ hr {
   }
   .flexCapability,
   .flexCapabilityTwo {
-    margin-bottom: 2rem;
+    margin: 3rem auto;
+  }
+  .flexSupport {
+    width: 90vw;
+    margin: 0;
   }
   .boxServices,
   .boxSupport,
   .boxSystems {
     width: 90vw;
-    height: auto;
+    min-height: 0;
     padding: 1rem;
+  }
+  .imageOne,
+  .imageTwo,
+  .imageThree {
+    min-width: 90vw;
   }
 }
 
