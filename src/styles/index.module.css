@@ -257,7 +257,6 @@ hr {
     margin: 3rem auto;
   }
   .flexSupport {
-    width: 90vw;
     margin: 0;
   }
   .boxServices,
@@ -304,6 +303,9 @@ hr {
   }
   .testimonial {
     font-size: 1rem;
+  }
+  .flexSupport {
+    width: 100%;
   }
 }
 

@@ -24,9 +24,10 @@ class ContactPage extends Component {
         <div className={styles.logoWrapper}>
           <form className={styles.contactFlex} 
                 method="POST"
-                action="https://formspree.io/scott.o.ammon@gmail.com"
+                action="https://formspree.io/cindys@avcd.com"
                 name="info-form"
           >
+            {/* <input type="hidden" name="_next" value="http://www.avcd.com/success" /> */}
             <label>*Full Name</label>
             <input
               name="name"
@@ -47,8 +48,9 @@ class ContactPage extends Component {
               type="text"
               className={styles.contactInput}
             />
-            <label>Select Project Type:</label>
+            <label>Project Type:</label>
             <select>
+              <option value="none-selected">Select One:</option>
               <option value="marine-newbuild">Marine New Build</option>
               <option value="marine-refit">Marine Refit</option>
               <option value="residential-new">Residential New</option>
