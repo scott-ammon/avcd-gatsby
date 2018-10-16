@@ -6,7 +6,7 @@ const AboutPage = (props) => (
     <h1 className={styles.title}>About AVCD</h1>
     <h5 className={styles.description}>
       AV Concepts and Design, Inc. is a team of professional audio/video engineers and systems 
-      integrators offering customized technology solutions for the discriminating client.
+      integrators offering customized technology solutions for the discerning client.
     </h5>
     <p>
       AV Concepts and Design, Inc. has been successfully placing state of the art entertainment 
