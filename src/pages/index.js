@@ -8,11 +8,7 @@ import { faHandshake } from '@fortawesome/free-solid-svg-icons'
 import { faFile } from '@fortawesome/free-solid-svg-icons'
 import { faUsers } from '@fortawesome/free-solid-svg-icons'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
-import mediaRack from '../img/media-rack.jpg'
-import meaculpa from '../img/meaculpa.jpg'
 import savannah from '../img/savannah.jpg'
-import tv from '../img/tv.jpg'
-import yacht2 from '../img/yacht2.jpeg'
 import muchoMasSalon from '../img/mucho-mas-salon.jpg'
 import lodge from '../img/lodge.jpg'
 import maramarack from '../img/maramarack2.jpg'
@@ -67,7 +63,7 @@ class IndexPage extends Component {
               <div className={styles.testimonial}>
                 <p>
                 “AVCD designed, installed and have been responsible for the maintenance of the AV and IT 
-                infrastructure on board M/Y MUCHOS MAS. There work has always been of the highest caliber 
+                infrastructure on board M/Y MUCHOS MAS. Their work has always been of the highest caliber 
                 and continue to support the vessel at all times to troubleshoot any issues that arise on 
                 board and have been a pleasure to work with both during the yacht build, and supporting the 
                 yacht’s day-to-day operations. I would recommend AVCD to any yacht Captain or management 
@@ -98,7 +94,7 @@ class IndexPage extends Component {
                   "Audio Visual Concepts & Design came onboard to improve the archaic control system of CV-9’s 
                   entertainment system that included Kaleidescape Movie & Music server, TVRO antenna & service, 
                   local disc players, and a large array amplifiers and speakers throughout the yacht. That was 
-                  the first time for me where a AV technician could actually describe to me how the system was 
+                  the first time for me where an AV technician could actually describe to me how the system was 
                   going to operate. In short order we had iPad controls, improved speaker systems and also detailed 
                   drawings of the entire system where the crew could easily be supported at a later time. For the next 
                   five years of heavy use we rarely had any issues to utilize that aspect." <br></br>– Captain Ethan Lee, M/Y CV-9  
@@ -122,11 +118,11 @@ class IndexPage extends Component {
               </div>
               <div className={classNames(styles.testimonial, styles.finalTestimonial)}>
                 <p>
-                  “I am the Captain of a 138ft M/Y that had the pleasure of working with AVDC during a complete refit of 
-                  our yacht.  Throughout the process ACDV remained easily contactable, informative and flexible due to constant 
+                  “I am the Captain of a 138ft M/Y that had the pleasure of working with AVCD during a complete refit of 
+                  our yacht.  Throughout the process AVCD remained easily contactable, informative and flexible due to constant 
                   changes being made to the project and the scale of work dramatically increasing.  The professionalism did not 
                   end once installation had taken place and they have been onboard for any warranty issues as well as changes 
-                  at the owners request.  I would highly recommend them for any up and coming projects that need to be carried 
+                  at the owner's request.  I would highly recommend them for any up and coming projects that need to be carried 
                   out to a ‘super yacht’ standard and with professionalism that surpasses all other companies in the yacht business.” <br></br>- Captain Christopher Grant, M/Y Mea Culpa
                 </p>
               </div>
