@@ -1,6 +1,6 @@
 # AV Concepts & Design Website
 
- Site: https://www.avcd.com
+Site: https://www.avcd.com/
 
 ![avcd-responsive-site-image](/src/img/responsive.png?raw=true)
 
