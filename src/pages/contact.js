@@ -27,7 +27,6 @@ class ContactPage extends Component {
                 action="https://formspree.io/cindys@avcd.com"
                 name="info-form"
           >
-            {/* <input type="hidden" name="_next" value="http://www.avcd.com/success" /> */}
             <label>*Full Name</label>
             <input
               name="name"
