@@ -24,7 +24,7 @@ class ContactPage extends Component {
         <div className={styles.logoWrapper}>
           <form className={styles.contactFlex} 
                 method="POST"
-                action="https://formspree.io/cindys@avcd.com"
+                action="https://formspree.io/scott.o.ammon@gmail.com"
                 name="info-form"
           >
             <label>*Full Name</label>
@@ -69,7 +69,7 @@ class ContactPage extends Component {
               className={styles.contactInput}
             />
             <p>*Indicates required field</p>
-            <button>Submit</button>
+            <button type="submit">Submit</button>
           </form>
           <img src={logo} className={styles.logo}></img>
         </div>
