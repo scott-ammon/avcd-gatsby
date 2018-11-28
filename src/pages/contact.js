@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styles from "../styles/contact.module.css"
-import logo from '../img/avcd.png'
+import logo from '../img/avcd.jpg'
 
 class ContactPage extends Component {
   constructor(props) {
