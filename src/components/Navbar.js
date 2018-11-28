@@ -33,7 +33,6 @@ class Navbar extends Component {
   }
 
   handleScroll = (e) => {
-
     let pageName = this.props.history.location.pathname
 
     if(pageName === '/') {
@@ -79,13 +78,36 @@ class Navbar extends Component {
     return (
       <div>
         <MediaQuery query="(max-width: 550px)">
-          <MobileMenu homeClick={this.handleHomeClick} burgerClick={this.handleClick} burgerColor={this.state.burgerColor}></MobileMenu>
+          <MobileMenu homeClick={this.handleHomeClick} 
+                      burgerClick={this.handleClick} 
+                      burgerColor={this.state.burgerColor}>
+          </MobileMenu>
         </MediaQuery>
         <div className={classNames(this.state.nav, styles.nav)}>
-          <Link exact to="/" onClick={this.handleHomeClick} className={classNames(this.state.link, styles.navLink)} activeClassName={activeStyle}>Home</Link>
-          <Link to="/about" onClick={this.handleClick} className={classNames(this.state.link, styles.navLink)} activeClassName={styles.activeBlack}>About</Link>
-          <Link to="/projects" onClick={this.handleClick} className={classNames(this.state.link, styles.navLink)} activeClassName={styles.activeBlack}>Projects</Link>
-          <Link to="/contact" onClick={this.handleClick} className={classNames(this.state.link, styles.navLink)} activeClassName={styles.activeBlack}>Contact</Link>
+          <Link exact to="/" 
+                onClick={this.handleHomeClick} 
+                className={classNames(this.state.link, styles.navLink)} 
+                activeClassName={activeStyle}>
+            Home
+          </Link>
+          <Link to="/about" 
+                onClick={this.handleClick} 
+                className={classNames(this.state.link, styles.navLink)} 
+                activeClassName={styles.activeBlack}>
+            About
+          </Link>
+          <Link to="/projects" 
+                onClick={this.handleClick} 
+                className={classNames(this.state.link, styles.navLink)} 
+                activeClassName={styles.activeBlack}>
+            Projects
+          </Link>
+          <Link to="/contact" 
+                onClick={this.handleClick} 
+                className={classNames(this.state.link, styles.navLink)} 
+                activeClassName={styles.activeBlack}>
+            Contact
+          </Link>
         </div>
       </div>
     )
